@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import './HomePage.css';  // Custom styles for homepage
 import 'lazysizes';
 import { useLocation } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
 import ClientsSection from './Clients';
+import OurService from './Services';
 
 const HomePage = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
@@ -315,6 +315,7 @@ const HomePage = () => {
     </section>
 
     <ClientsSection />
+    <OurService />
 
     </div>
   );

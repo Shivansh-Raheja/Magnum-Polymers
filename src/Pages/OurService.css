@@ -1,0 +1,143 @@
+/* Our Service Section */
+.our-service {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .our-service-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-header {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .service-header h2 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .service-header p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .service-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .service-card .service-icon {
+    font-size: 3rem;
+    color: #ff5722;
+    margin-bottom: 15px;
+  }
+  
+  /* Lazy Loading Animations */
+  .slide-in-left {
+    animation: slideInLeft 1s forwards;
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 1s forwards;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .service-header h2 {
+      font-size: 2rem;
+    }
+  
+    .service-header p {
+      font-size: 1rem;
+    }
+  
+    .service-card .service-icon {
+      font-size: 2rem;
+    }
+  
+    /* Adjust the grid for smaller screens */
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      gap: 20px; /* Reduce the gap for smaller screens */
+    }
+  
+    .service-card {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-header {
+      text-align: center;
+    }
+  
+    .service-card {
+      padding: 10px; /* Even less padding for very small screens */
+    }
+  
+    .service-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .service-card p {
+      font-size: 0.9rem;
+    }
+  
+    .service-grid {
+      grid-template-columns: 1fr; /* One column for very small screens */
+      gap: 15px;
+    }
+  }
+  
