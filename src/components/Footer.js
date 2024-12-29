@@ -10,9 +10,11 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Contact Us</h3>
           <ul className="footer-list">
-            <li><FaPhone /> +1 234 567 890</li>
-            <li><FaEnvelope /> info@example.com</li>
-            <li><FaMapMarkerAlt /> 123 Main St, City, Country</li>
+            <li><FaPhone /> +91-98110 61756</li>
+            <li><FaEnvelope /> magnumpolymers@gmail.com</li>
+            <li><FaMapMarkerAlt /> Plot No:14, Sector-59,</li>
+            <li> Hsidc Ind Estate, Faridabad 121004,</li>
+            <li>Haryana, India</li>
             <li className="social-links">
               <a href="#"><FaFacebook /></a>
               <a href="#"><FaTwitter /></a>
