@@ -207,8 +207,8 @@ const HomePage = () => {
         ref={categoriesSectionRef}
       >
         <h2>Our Categories</h2>
-        <div className="product-grid">
-          <Link to="/blow-moulding" className="product-tile">
+        <div className="product-gridd">
+          <Link to="/blow-moulding" className="product-tiles">
             <img
               src="/pexels-cottonbro-5532664.jpg"
               data-src="/pexels-cottonbro-5532664.jpg"
@@ -218,7 +218,7 @@ const HomePage = () => {
             <div className="category-label">Blow Moulding</div>
           </Link>
 
-          <Link to="/injection-insert-moulding" className="product-tile">
+          <Link to="/injection-insert-moulding" className="product-tiles">
             <img
               src="/pexels-willianmatiola-29942606.jpg"
               data-src="/pexels-willianmatiola-29942606.jpg"
@@ -228,7 +228,7 @@ const HomePage = () => {
             <div className="category-label">Injection & Insert Moulding</div>
           </Link>
 
-          <Link to="/inhouse-tooling-spm" className="product-tile">
+          <Link to="/inhouse-tooling-spm" className="product-tiles">
             <img
               src="/pexels-pixabay-236698.jpg"
               data-src="/pexels-pixabay-236698.jpg"
