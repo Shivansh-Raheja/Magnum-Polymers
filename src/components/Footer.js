@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Contact Us</h3>
           <ul className="footer-list">
-            <li><FaPhone /> +91-98110 61756</li>
+            <li><FaPhoneAlt /> +91-98110 61756</li>
             <li><FaEnvelope /> magnumpolymers@gmail.com</li>
             <li><FaMapMarkerAlt /> Plot No:14, Sector-59,</li>
             <li> Hsidc Ind Estate, Faridabad 121004,</li>
