@@ -558,7 +558,7 @@
   
   @media (max-width: 768px) {
     .product-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
   
     .left-side .intro-text h2 {
@@ -579,6 +579,9 @@
       width: 100%;
       padding: 15px;
     }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
   }
   
   
