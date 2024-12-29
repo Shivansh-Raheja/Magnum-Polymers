@@ -39,11 +39,6 @@
     font-weight: bold;
 }
 
-.navbar-custom .navbar-toggler-icon {
-    background-color: #fff ;  /* White hamburger icon */
-}
-
-/* Fix the hamburger icon positioning */
 .navbar-toggler-custom {
     border: none;
     background-color: transparent;  /* Make the background transparent */
@@ -51,23 +46,13 @@
     margin-left: auto;  /* Align to the left */
 }
 
-.navbar-custom .navbar-collapse {
-    text-align: center;
+.navbar-collapse {
     animation: fadeIn 0.5s ease;  /* Fade-in animation for collapsed navbar */
-}
-
-.navbar-custom .navbar-collapse.show {
-    animation: fadeInUp 0.6s ease;
 }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
 }
 
 /* Center the navbar links on large screens */
@@ -77,15 +62,43 @@
     width: 100%;
 }
 
+/* Slide-in menu for mobile screens */
 @media (max-width: 992px) {
-    .navbar-custom .navbar-nav .nav-link {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: #000; /* Match navbar background */
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1050;
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0); /* Slide-in effect */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .navbar-nav .nav-link {
         font-size: 20px;  /* Larger font size on mobile */
+        margin-bottom: 15px;
+    }
+
+    .navbar-toggler-custom {
+        z-index: 1100; /* Ensure toggle button is on top */
     }
 }
 
 /* Added media query for extra small screens */
 @media (max-width: 576px) {
-    .navbar-custom .navbar-nav .nav-link {
+    .navbar-nav .nav-link {
         font-size: 18px;  /* Slightly smaller font size for smaller screens */
     }
 }
