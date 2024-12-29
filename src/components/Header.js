@@ -42,22 +42,22 @@ const Header = () => {
             <Nav.Link as={Link} to="/" className={location.pathname === '/' ? 'active' : ''}>
               HOME
             </Nav.Link>
-            <Nav.Link as={Link} to="/about" className={location.pathname === '/about' ? 'active' : ''}>
+            <Nav.Link as={Link} to="/" className={location.pathname === '/about' ? 'active' : ''}>
               ABOUT US
             </Nav.Link>
-            <Nav.Link as={Link} to="/products" className={location.pathname === '/products' ? 'active' : ''}>
+            <Nav.Link as={Link} to="/" className={location.pathname === '/products' ? 'active' : ''}>
               PRODUCTS
             </Nav.Link>
-            <Nav.Link as={Link} to="/capabilities" className={location.pathname === '/capabilities' ? 'active' : ''}>
+            <Nav.Link as={Link} to="/" className={location.pathname === '/capabilities' ? 'active' : ''}>
               CAPABILITIES
             </Nav.Link>
-            <Nav.Link as={Link} to="/infrastructure" className={location.pathname === '/infrastructure' ? 'active' : ''}>
+            <Nav.Link as={Link} to="/" className={location.pathname === '/infrastructure' ? 'active' : ''}>
               INFRASTRUCTURE
             </Nav.Link>
-            <Nav.Link as={Link} to="/certificates" className={location.pathname === '/certificates' ? 'active' : ''}>
+            <Nav.Link as={Link} to="/" className={location.pathname === '/certificates' ? 'active' : ''}>
               CERTIFICATES
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
+            <Nav.Link as={Link} to="/" className={location.pathname === '/contact' ? 'active' : ''}>
               CONTACT US
             </Nav.Link>
           </Nav>
