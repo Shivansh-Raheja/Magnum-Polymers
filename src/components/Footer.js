@@ -36,9 +36,7 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul className="footer-list">
             <li><a href="#">Profile</a></li>
-            <br />
             <li><a href="#">Brochure</a></li>
-            <br />
             <li><a href="#">Get a Quote</a></li>
           </ul>
         </div>
