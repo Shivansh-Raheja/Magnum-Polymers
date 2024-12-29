@@ -1,0 +1,143 @@
+/* Footer Section */
+.footer {
+    background-color: #000;
+    color: #ffffff;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ff5722;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .footer-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #ff5722;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  .footer-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-list li a:hover {
+    color: #ff5722;
+  }
+  
+  .footer-list li svg {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #ff5722;
+  }
+  
+  /* Social Media Links */
+  .social-links a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    transform: scale(1.2);
+    color: #ff5722;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #bbb;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .footer-list li {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+  
+    .footer-list li svg {
+      margin-right: 8px;
+    }
+  
+    .social-links a {
+      margin-right: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-column {
+      padding: 10px;
+      min-width: 100%;
+    }
+  
+    .footer-list li {
+      font-size: 1rem;
+    }
+  
+    .footer-bottom {
+      font-size: 0.8rem;
+      padding-top: 15px;
+    }
+  }
+  

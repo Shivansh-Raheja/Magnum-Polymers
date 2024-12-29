@@ -1,0 +1,91 @@
+/* Header styling */
+.navbar-custom {
+    background-color: #000;  /* Dark background color */
+    transition: all 0.3s ease;  /* Smooth transition for background color */
+}
+
+.navbar-custom:hover {
+    background-color: #000; /* Darker background on hover */
+}
+
+.navbar-custom .logo h1 {
+    color: #fff;  /* White text for the brand */
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .logo h1:hover {
+    color: #ff6347; /* Hover effect on brand */
+    text-shadow: 0 0 10px rgba(255, 99, 71, 0.7);
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #fff;  /* White text for links */
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #ff6347;  /* Hover color (tomato red) */
+    transform: translateY(-3px);  /* Subtle hover lift effect */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-custom .navbar-nav .nav-link.active {
+    color: #ff6347;  /* Active link color */
+    font-weight: bold;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: #fff ;  /* White hamburger icon */
+}
+
+/* Fix the hamburger icon positioning */
+.navbar-toggler-custom {
+    border: none;
+    background-color: transparent;  /* Make the background transparent */
+    padding: 0;
+    margin-left: auto;  /* Align to the left */
+}
+
+.navbar-custom .navbar-collapse {
+    text-align: center;
+    animation: fadeIn 0.5s ease;  /* Fade-in animation for collapsed navbar */
+}
+
+.navbar-custom .navbar-collapse.show {
+    animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Center the navbar links on large screens */
+.navbar-nav-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 20px;  /* Larger font size on mobile */
+    }
+}
+
+/* Added media query for extra small screens */
+@media (max-width: 576px) {
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 18px;  /* Slightly smaller font size for smaller screens */
+    }
+}
