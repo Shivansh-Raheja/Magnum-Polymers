@@ -5,18 +5,16 @@ import 'lazysizes';
 import { useLocation } from 'react-router-dom';
 import ClientsSection from './Clients';
 import OurService from './Services';
+import AboutUs from './Aboutus';
+import OurCategories from './OurCategories';
 
 const HomePage = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
   const location = useLocation();
-  const [isVisibleAbout, setIsVisibleAbout] = useState(false);
-  const [isVisibleCategories, setIsVisibleCategories] = useState(false);
   const [isVisibleGallery, setIsVisibleGallery] = useState(false);
   const [isVisibleProducts, setIsVisibleProducts] = useState(false);
   const productsSectionRef = useRef(null);
 
-  const aboutSectionRef = useRef(null);
-  const categoriesSectionRef = useRef(null);
   const gallerySectionRef = useRef(null);
 
   const products = Array.from({ length: 6 }, (_, i) => ({
@@ -67,52 +65,6 @@ const HomePage = () => {
     return () => {
       if (productsSectionRef.current) {
         observer.unobserve(productsSectionRef.current);
-      }
-    };
-  }, []);
-
-  // IntersectionObserver for About Us Section
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisibleAbout(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (aboutSectionRef.current) {
-      observer.observe(aboutSectionRef.current);
-    }
-
-    return () => {
-      if (aboutSectionRef.current) {
-        observer.unobserve(aboutSectionRef.current);
-      }
-    };
-  }, []);
-
-  // IntersectionObserver for Product Categories Section
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisibleCategories(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (categoriesSectionRef.current) {
-      observer.observe(categoriesSectionRef.current);
-    }
-
-    return () => {
-      if (categoriesSectionRef.current) {
-        observer.unobserve(categoriesSectionRef.current);
       }
     };
   }, []);
@@ -171,74 +123,9 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* About Us Section */}
-      <section
-        className={`about-us ${isVisibleAbout ? 'visible' : ''}`}
-        ref={aboutSectionRef}
-      >
-        <div className="content">
-          <h2>About Us</h2>
-          <p>
-        Magnum polymers, was established in the year 1991 by Mr. Rajeev Trehan, qualified Plastics Technologist who is also presently the Managing Director of the company.
-        </p>
-        <p>
-        Magnum Polymers has got experience of working with big corporates like SAMSUNG, HERO, EMERSON, JTEKT, SONA & SYSTEMAIR and satisfying them over the years. Presently, Magnum Polymers is known for its quality Injection & blow moulded products, problem solving techniques, Cost reduction projects, Imports replacements and its active CSR activities.
-        </p>
-        <p>
-        Magnum Polymers is an ISO 9001 & 14001 certified Company based at biggest industrial hub at FARIDABAD in Delhi NCR. We seek to produce quality products which are the integral part of various industrial products useful in our daily life. We have been a constant supplier to various industries like automobile, consumer durables, Power generation, Toys etc.
-        </p>
-        </div>
-        {/* Lazy-loaded image */}
-        <div className="image-container">
-          <img
-            src="/pexels-tiger-lily-4483609.jpg"
-            data-src="/pexels-tiger-lily-4483609.jpg"
-            alt="About Us"
-            className={`lazyload ${isVisibleAbout ? 'loaded' : ''}`}
-            width="500"
-            height="auto"
-          />
-        </div>
-      </section>
+      <AboutUs />
 
-      {/* Product Categories Section */}
-      <section
-        className={`product-categories ${isVisibleCategories ? 'visible' : ''}`}
-        ref={categoriesSectionRef}
-      >
-        <h2>Our Categories</h2>
-        <div className="product-gridd">
-          <Link to="/blow-moulding" className="product-tiles">
-            <img
-              src="/pexels-cottonbro-5532664.jpg"
-              data-src="/pexels-cottonbro-5532664.jpg"
-              alt="Blow Moulding"
-              className="lazyload"
-            />
-            <div className="category-label">Blow Moulding</div>
-          </Link>
-
-          <Link to="/injection-insert-moulding" className="product-tiles">
-            <img
-              src="/pexels-willianmatiola-29942606.jpg"
-              data-src="/pexels-willianmatiola-29942606.jpg"
-              alt="Injection & Insert Moulding"
-              className="lazyload"
-            />
-            <div className="category-label">Injection & Insert Moulding</div>
-          </Link>
-
-          <Link to="/inhouse-tooling-spm" className="product-tiles">
-            <img
-              src="/pexels-pixabay-236698.jpg"
-              data-src="/pexels-pixabay-236698.jpg"
-              alt="Inhouse Tooling & SPM"
-              className="lazyload"
-            />
-            <div className="category-label">Inhouse Tooling & SPM</div>
-          </Link>
-        </div>
-      </section>
+      <OurCategories />
 
       <section
   className={`work-gallery ${isVisibleGallery ? 'visible' : ''}`}

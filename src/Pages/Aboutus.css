@@ -1,0 +1,105 @@
+/* About Us Section */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    background-color: #f4f4f4;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Move down initially */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .about-us.visible {
+    opacity: 1;
+    transform: translateY(0); /* Fade and slide into position */
+  }
+  
+  .about-us .content {
+    width: 50%;
+    padding-right: 30px;
+  }
+  
+  .about-us .content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: left;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideInLeft 1.5s ease-out 0.3s forwards;
+  }
+  
+  .about-us .content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out 0.5s forwards;
+  }
+  
+  .about-us img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-width: 500px;
+    opacity: 0;
+    transform: translateX(30px);
+    animation: fadeInRight 2s ease-out 0.8s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-30px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes fadeInRight {
+    0% { opacity: 0; transform: translateX(30px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Lazy loading effect */
+  img.lazyload {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  img.lazyload.loaded {
+    opacity: 1;
+  }
+  
+  /* For smaller screens */
+  @media (max-width: 768px) {
+    .about-us {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-us .content {
+      width: 100%;
+      padding-right: 0;
+    }
+  
+    .about-us img {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    .about-us .content h2 {
+      font-size: 2.5rem;
+    }
+  
+    .about-us .content p {
+      font-size: 1rem;
+    }
+  }
+  
