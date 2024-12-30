@@ -70,21 +70,14 @@
     padding-right: 10px;
 }
 
+/* Uniform Paragraph Styling */
 .about-text p {
+    font-size: 1.2rem; /* Unified font size */
+    font-weight: normal; /* Unified weight */
+    font-style: normal; /* Unified style */
+    line-height: 1.8;
     margin-bottom: 20px;
     word-spacing: 1px;
-}
-
-/* Decorative Elements for Text */
-.about-text p:first-of-type {
-    font-weight: bold;
-    font-size: 1.3rem;
-    color: #343a40;
-}
-
-.about-text p:last-of-type {
-    font-style: italic;
-    color: #555;
 }
 
 /* Hover Effect for Video */
@@ -126,12 +119,14 @@
     }
 
     .about-text {
-        text-align: center; /* Center align text for smaller screens */
+        text-align: justify; /* Justify text for readability */
         font-size: 1rem; /* Adjusted font size for mobile */
         line-height: 1.6; /* Slightly adjusted line-height for better readability */
+        padding-right: 0; /* Remove extra padding */
     }
 
     .about-text p {
+        font-size: 1rem; /* Consistent paragraph size */
         margin-bottom: 15px;
     }
 }
@@ -143,11 +138,190 @@
     }
 
     .about-text {
+        text-align: justify;
         font-size: 0.9rem; /* Smaller font size for very small screens */
         line-height: 1.4; /* Tighter line height */
+        padding-right: 0; /* Ensure text fits screen */
+        word-break: break-word; /* Prevent long words from breaking layout */
+    }
+
+    .about-text p {
+        font-size: 0.9rem; /* Unified small paragraph size */
+        margin-bottom: 10px; /* Adjusted spacing for tight layout */
     }
 
     .about-video-container {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+/* For Medium Screens */
+/* General Section Styles */
+.statistics-section {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    background-color: #f9f9f9;
+    padding: 40px 20px; /* Reduced padding for the section */
+    margin-top: 40px; /* Smaller separation */
+}
+
+/* Section Title */
+.statistics-heading h2 {
+    font-size: 2.4rem; /* Reduced font size */
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 30px;
+    text-align: right; /* Right-aligned */
+    padding-right: 10px;
+    border-right: 4px solid #ff6347; /* Slimmer border */
+    border-left: none;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    animation: fadeInRight 1s ease-out;
+}
+
+/* Container for the Tiles */
+.statistics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Smaller minimum width */
+    gap: 15px; /* Tighter gaps */
+    margin-top: 20px;
+    animation: slideUp 1.2s ease-in-out;
+}
+
+/* Tile Styling */
+/* Tile Hover Effects */
+.statistics-column {
+    background-color: #ffffff;
+    padding: 15px; /* Adjusted padding */
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Transform Effect on Hover */
+.statistics-column:hover {
+    transform: scale(1.05); /* Slightly enlarge the tile */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow effect */
+}
+
+/* Icon Styling */
+.statistics-icon {
+    font-size: 1.8rem; /* Maintain icon size */
+    color: #ff6347; /* Default icon color */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for icon movement */
+}
+
+/* Add Transform to Icon on Hover */
+.statistics-column:hover .statistics-icon {
+    transform: rotate(10deg); /* Add a slight rotation effect */
+}
+
+/* Content Styling */
+.statistics-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529; /* Consistent text color */
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: transform 0.3s ease; /* Transition for text movement */
+}
+
+/* Transform Effect for Text on Hover */
+.statistics-column:hover .statistics-content h3 {
+    transform: translateY(-5px); /* Slight upward movement */
+}
+
+/* Counter Styling */
+.counter {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2ecc71; /* Default counter color */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Counter Movement on Hover */
+.statistics-column:hover .counter {
+    transform: scale(1.1); /* Slightly enlarge the counter */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .statistics-heading h2 {
+        font-size: 2rem; /* Smaller title size */
+        text-align: center;
+        padding-right: 0;
+        border-right: none;
+    }
+
+    .statistics-container {
+        grid-template-columns: repeat(2, 1fr); /* Two tiles per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .statistics-heading h2 {
+        font-size: 1.6rem; /* Smaller title for mobile */
+    }
+
+    .statistics-container {
+        grid-template-columns: repeat(2, 1fr); /* Still two tiles per row */
+        gap: 10px; /* Reduced gap for tight spacing */
+    }
+
+    .statistics-column {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .statistics-icon {
+        font-size: 1.5rem; /* Smaller icon size for mobile */
+    }
+
+    .statistics-content h3 {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .counter {
+        font-size: 1.2rem; /* Smaller counter size for mobile */
     }
 }
