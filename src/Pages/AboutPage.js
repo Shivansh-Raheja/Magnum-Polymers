@@ -119,6 +119,37 @@ const AboutPage = () => {
     </div>
 </section>
 
+<section className="certification-section">
+    <div className="certification-container">
+        {/* Text Content */}
+        <div className="certification-text">
+            <h2>By Whom We Are Certified</h2>
+            <p>
+                We are proud to be certified by globally recognized organizations, 
+                ensuring the highest standards of quality and excellence. Our certifications 
+                include ISO 9001 for quality management and ISO 14001 for environmental management.
+            </p>
+            <p>
+                These certifications validate our commitment to delivering exceptional 
+                services while maintaining sustainability and ethical practices in every project we undertake.
+            </p>
+            <p>
+            These certifications not only demonstrate our dedication to meeting industry benchmarks but also inspire trust among our clients and partners. They reflect our relentless pursuit of innovation, efficiency, and excellence, ensuring that every service we deliver aligns with global standards and exceeds expectations.
+            </p>
+        </div>
+        {/* Image Content */}
+        <div className="certification-image-container">
+            <div className="certification-image">
+                <img 
+                    src="https://cdn3d.iconscout.com/3d/premium/thumb/certificate-3d-icon-download-in-png-blend-fbx-gltf-file-formats--diploma-degree-document-education-achievement-teacher-day-pack-school-icons-5117408.png" 
+                    alt="Certification Example" 
+                    className="responsive-image dancing-image" 
+                />
+            </div>
+        </div>
+    </div>
+</section>
+
     </div>
   );
 };

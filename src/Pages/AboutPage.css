@@ -325,3 +325,130 @@
         font-size: 1.2rem; /* Smaller counter size for mobile */
     }
 }
+
+/* Certification Section */
+.certification-section {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-top: 40px;
+    line-height: 1.6;
+}
+
+/* Container for Text and Image */
+.certification-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Text Content Styling */
+.certification-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.certification-text h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 20px;
+    text-align: left;
+    border-left: 4px solid #ff6347;
+    padding-left: 15px;
+}
+
+.certification-text p {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 15px;
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.8;
+}
+
+/* Image Container Styling */
+.certification-image-container {
+    flex: 1;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.5); /* Transparent background */
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.certification-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: dancing 2s infinite ease-in-out; /* Dancing animation */
+}
+
+.certification-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for Dancing Animation */
+@keyframes dancing {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-5px) rotate(-2deg);
+    }
+    50% {
+        transform: translateY(0) rotate(2deg);
+    }
+    75% {
+        transform: translateY(5px) rotate(-2deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .certification-container {
+        flex-direction: column; /* Stack content on top of each other */
+    }
+
+    .certification-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .certification-text p {
+        text-align: justify;
+    }
+
+    .certification-image-container {
+        margin-top: 20px; /* Add spacing for stacked layout */
+    }
+}
+
+@media (max-width: 480px) {
+    .certification-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .certification-text p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .certification-image img {
+        border-radius: 8px; /* Adjusted radius for smaller screens */
+    }
+}
