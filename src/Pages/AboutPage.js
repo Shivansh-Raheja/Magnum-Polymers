@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { FaProjectDiagram, FaUsers, FaCalendarAlt ,FaCertificate} from 'react-icons/fa';
+import {  FaCog, FaIndustry, FaHeadset } from 'react-icons/fa';
 import './AboutPage.css';
 
 const AboutPage = () => {
@@ -149,6 +150,43 @@ const AboutPage = () => {
         </div>
     </div>
 </section>
+
+<section class="vision-section">
+  <div class="vision-container">
+    <div class="vision-left">
+      <h2 class="vision-title">Our Vision</h2>
+      <video class="vision-video" controls>
+        <source src="./Mango AI Work_20241230-211335.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="vision-right">
+      <div class="vision-tiles">
+        <div class="vision-tile">
+          <FaUsers size={30} className="vision-icon" />
+          <h3>Professional Teams</h3>
+          <p>Our expert teams bring top-level expertise and experience.</p>
+        </div>
+        <div class="vision-tile">
+          <FaCog size={30} className="vision-icon" />
+          <h3>Smart Services</h3>
+          <p>Innovative and efficient solutions for every challenge.</p>
+        </div>
+        <div class="vision-tile">
+          <FaIndustry size={30} className="vision-icon" />
+          <h3>Latest Machinery</h3>
+          <p>State-of-the-art machinery for maximum performance.</p>
+        </div>
+        <div class="vision-tile">
+          <FaHeadset size={30} className="vision-icon" />
+          <h3>Great Support</h3>
+          <p>Dedicated support available whenever you need it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     </div>
   );
