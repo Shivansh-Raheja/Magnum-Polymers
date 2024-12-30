@@ -1,0 +1,153 @@
+/* About Page Styles */
+.about-page {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    line-height: 1.6;
+}
+
+/* About Us Section */
+.about-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative; /* Required for fade-up animation */
+    animation: fadeUp 1.2s ease-in-out forwards;
+    opacity: 0; /* Start with hidden state for animation */
+}
+
+/* Title Styling */
+.about-title {
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 40px;
+    text-align: left; /* Left-aligned */
+    width: 100%;
+    padding-left: 15px;
+    border-left: 6px solid #ff6347; /* Decorative left border */
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+/* Content Styling */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+/* Video Container */
+.about-video-container {
+    flex: 1;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Text Styling */
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #495057;
+    text-align: justify; /* Ensures even spacing across the container */
+    padding-right: 10px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    word-spacing: 1px;
+}
+
+/* Decorative Elements for Text */
+.about-text p:first-of-type {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #343a40;
+}
+
+.about-text p:last-of-type {
+    font-style: italic;
+    color: #555;
+}
+
+/* Hover Effect for Video */
+.about-video-container:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade Up Animation */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-video-container,
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-title {
+        text-align: center; /* Center title for smaller screens */
+        padding-left: 0;
+        border-left: none;
+        font-size: 3rem;
+    }
+
+    .about-text {
+        text-align: center; /* Center align text for smaller screens */
+        font-size: 1rem; /* Adjusted font size for mobile */
+        line-height: 1.6; /* Slightly adjusted line-height for better readability */
+    }
+
+    .about-text p {
+        margin-bottom: 15px;
+    }
+}
+
+/* For Extra Small Screens */
+@media (max-width: 576px) {
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-text {
+        font-size: 0.9rem; /* Smaller font size for very small screens */
+        line-height: 1.4; /* Tighter line height */
+    }
+
+    .about-video-container {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+}

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './Pages/Home';
+import AboutPage from './Pages/AboutPage';
 import './App.css'; // Ensure you have your styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,6 +17,10 @@ function App() {
         {/* Define routes for different pages */}
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* Add routes for other sections like About Us, Products, etc. */}
+        </Routes>
+        <Routes>
+          <Route path="/about-us" element={<AboutPage />} />
           {/* Add routes for other sections like About Us, Products, etc. */}
         </Routes>
         <Footer />
