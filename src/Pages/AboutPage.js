@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { FaProjectDiagram, FaUsers, FaCalendarAlt ,FaCertificate} from 'react-icons/fa';
 import {  FaCog, FaIndustry, FaHeadset } from 'react-icons/fa';
+import Future from './Future';
 import './AboutPage.css';
 
 const AboutPage = () => {
@@ -187,6 +188,7 @@ const AboutPage = () => {
   </div>
 </section>
 
+<Future />
 
     </div>
   );

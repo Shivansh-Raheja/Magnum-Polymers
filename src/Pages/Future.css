@@ -1,0 +1,138 @@
+/* General Styling for Future Plans Section */
+.future-plans-container {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.future-plans-text {
+    flex: 1 1 45%; /* Left section takes 45% width */
+    text-align: left;
+}
+
+.future-plans-header {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left; /* Aligns the title to the left */
+    border-left: 4px solid #ff5722;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.future-plans-header:hover {
+    transform: scale(1.05);
+}
+
+.future-plans-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+.future-plans-list-item {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+    word-wrap: break-word;
+}
+
+.future-plans-list-item:hover {
+    color: #ff5722; /* Highlight list items on hover */
+}
+
+/* Image Styling */
+.future-plans-image-container {
+    flex: 1 1 45%; /* Right section takes 45% width */
+    text-align: right;
+}
+
+.future-plans-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.future-plans-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .future-plans-text,
+    .future-plans-image-container {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .future-plans-header {
+        font-size: 2rem;
+        text-align: center;
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .future-plans-image {
+        max-width: 90%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .future-plans-list {
+        padding-left: 0;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .future-plans-list-item {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        word-wrap: break-word;
+    }
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 480px) {
+    .future-plans-header {
+        font-size: 1.6rem; /* Smaller font size */
+    }
+
+    .future-plans-image {
+        max-width: 100%; /* Image shrinks to fit the screen */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .future-plans-list {
+        font-size: 0.9rem; /* Smaller bullet point text */
+        line-height: 1.5;
+        padding-left: 0;
+        margin: 0 auto; /* Center bullet points */
+    }
+
+    .future-plans-list-item {
+        font-size: 0.9rem;
+        word-break: break-word; /* Ensure long text wraps properly */
+    }
+}
