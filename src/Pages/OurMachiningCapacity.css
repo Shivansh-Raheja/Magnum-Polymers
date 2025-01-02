@@ -7,77 +7,132 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0; /* Reduced the gap between machines */
-    /* Smooth transition for transform and opacity */
-   /* Initially hidden for animation */
-    /* Starting position of the item (slightly below) */
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .machining-item.right {
+    transform: translateX(100px);
   }
   
   .machining-item.visible {
-    opacity: 1; /* Visible when in view */
-    transform: translateY(0); /* Final position */
+    opacity: 1;
+    transform: translateX(0);
   }
   
-  .machining-item img {
+  .machining-content {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    gap: 20px; /* Added gap for spacing between image and text */
+  }
+  
+  .machining-item.right .machining-content {
+    flex-direction: row-reverse;
+  }
+  
+  .machining-image {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .machining-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+    border-radius: 8px; /* Rounded edges for images */
   }
   
-  .machining-item .machining-image {
+  .machining-text {
     flex: 1;
-    padding: 20px;
+    padding: 10px;
+    text-align: left;
+    position: relative;
   }
   
-  .machining-item .machining-text {
-    flex: 1;
-    padding: 20px;
+  .machining-text h2,
+  .machining-text p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
   
-  .machining-item.left .machining-image {
-    order: 1;
+  .machining-item.visible .machining-text h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
   }
   
-  .machining-item.right .machining-text {
-    order: 1;
+  .machining-item.visible .machining-text p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
   }
   
-  .machining-item h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+  @media (max-width: 1024px) {
+    .machining-content {
+      gap: 15px;
+    }
   
-  .machining-item p {
-    font-size: 16px;
-    color: #555;
-    text-align: left; /* Default alignment */
-  }
+    .machining-text {
+      padding: 15px;
+      text-align: center; /* Center text for medium screens */
+    }
   
-  .machining-container h1 {
-    font-size: 32px;
-    margin-top: 40px;
+    .machining-text h2 {
+      font-size: 1.8rem; /* Adjust heading size */
+    }
+  
+    .machining-text p {
+      font-size: 1rem; /* Adjust paragraph size */
+    }
   }
   
   @media (max-width: 768px) {
-    .machining-item {
+    .machining-content {
       flex-direction: column;
       text-align: center;
     }
   
-    .machining-item img {
-      max-width: 100%;
+    .machining-item.right .machining-content {
+      flex-direction: column;
+    }
+  
+    .machining-image {
       margin-bottom: 20px;
     }
   
-    .machining-item .machining-text p {
+    .machining-text {
       padding: 10px;
-      text-align: justify; /* Justified text for better paragraph alignment on smaller screens */
+    }
+  
+    .machining-text h2 {
+      font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+  
+    .machining-text p {
+      font-size: 0.9rem; /* Smaller paragraph text for mobile */
+      text-align: justify;
     }
   }
   
-  /* Hover effect for images */
-  .machining-item img:hover {
-    transform: scale(1.05); /* Slightly zoom the image on hover */
+  @media (max-width: 480px) {
+    .machining-content {
+      padding: 15px;
+      gap: 10px;
+    }
+  
+    .machining-text h2 {
+      font-size: 1.3rem; /* Even smaller heading for very small screens */
+    }
+  
+    .machining-text p {
+      font-size: 0.8rem; /* Compact paragraph text for small screens */
+    }
   }
   

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./OurMachiningCapacity.css";
 
 const machines = [
@@ -40,25 +40,49 @@ const machines = [
 ];
 
 const OurMachiningCapacity = () => {
-  return (
-    <div className="machining-container">
-      <h1 style={{fontWeight:'bold'}}>Our Machining Capacity</h1>
-      {machines.map((machine, index) => (
-        <div
-          key={index}
-          className={`machining-item ${index % 2 === 0 ? "left" : "right"}`}
-        >
-          <div className="machining-image">
-            <img src={machine.image} alt={machine.name} />
+    const [visibleIndexes, setVisibleIndexes] = useState([]);
+  
+    const handleScroll = () => {
+      const items = document.querySelectorAll(".machining-item");
+      items.forEach((item, index) => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top <= window.innerHeight - 100) {
+          setVisibleIndexes((prev) =>
+            prev.includes(index) ? prev : [...prev, index]
+          );
+        }
+      });
+    };
+  
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      handleScroll(); // Trigger on mount
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+  
+    return (
+      <div className="machining-container">
+        <h1 style={{ fontWeight: "bold" }}>Our Machining Capacity</h1>
+        {machines.map((machine, index) => (
+          <div
+            key={index}
+            className={`machining-item ${index % 2 === 0 ? "left" : "right"} ${
+              visibleIndexes.includes(index) ? "visible" : ""
+            }`}
+          >
+            <div className="machining-content">
+              <div className="machining-image">
+                <img src={machine.image} alt={machine.name} />
+              </div>
+              <div className="machining-text">
+                <h2>{machine.name}</h2>
+                <p>{machine.description}</p>
+              </div>
+            </div>
           </div>
-          <div className="machining-text">
-            <h2>{machine.name}</h2>
-            <p>{machine.description}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-};
-
-export default OurMachiningCapacity;
+        ))}
+      </div>
+    );
+  };
+  
+  export default OurMachiningCapacity;
