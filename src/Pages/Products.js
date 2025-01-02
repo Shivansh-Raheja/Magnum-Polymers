@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Products.css";
 
 const Products = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <div className="products-section">
       {/* Blow Moulding Section */}
