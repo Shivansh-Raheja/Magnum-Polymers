@@ -1,0 +1,83 @@
+.machining-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .machining-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Reduced the gap between machines */
+    /* Smooth transition for transform and opacity */
+   /* Initially hidden for animation */
+    /* Starting position of the item (slightly below) */
+  }
+  
+  .machining-item.visible {
+    opacity: 1; /* Visible when in view */
+    transform: translateY(0); /* Final position */
+  }
+  
+  .machining-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+  }
+  
+  .machining-item .machining-image {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .machining-item .machining-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .machining-item.left .machining-image {
+    order: 1;
+  }
+  
+  .machining-item.right .machining-text {
+    order: 1;
+  }
+  
+  .machining-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .machining-item p {
+    font-size: 16px;
+    color: #555;
+    text-align: left; /* Default alignment */
+  }
+  
+  .machining-container h1 {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .machining-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .machining-item img {
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .machining-item .machining-text p {
+      padding: 10px;
+      text-align: justify; /* Justified text for better paragraph alignment on smaller screens */
+    }
+  }
+  
+  /* Hover effect for images */
+  .machining-item img:hover {
+    transform: scale(1.05); /* Slightly zoom the image on hover */
+  }
+  

@@ -48,7 +48,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/products" className={location.pathname === '/products' ? 'active' : ''}>
               PRODUCTS
             </Nav.Link>
-            <Nav.Link as={Link} to="/" className={location.pathname === '/capabilities' ? 'active' : ''}>
+            <Nav.Link as={Link} to="/capabilities" className={location.pathname === '/capabilities' ? 'active' : ''}>
               CAPABILITIES
             </Nav.Link>
             <Nav.Link as={Link} to="/" className={location.pathname === '/infrastructure' ? 'active' : ''}>
