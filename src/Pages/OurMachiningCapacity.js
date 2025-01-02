@@ -42,7 +42,7 @@ const machines = [
 const OurMachiningCapacity = () => {
   return (
     <div className="machining-container">
-      <h1>Our Machining Capacity</h1>
+      <h1 style={{fontWeight:'bold'}}>Our Machining Capacity</h1>
       {machines.map((machine, index) => (
         <div
           key={index}
