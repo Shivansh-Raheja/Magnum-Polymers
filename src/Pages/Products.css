@@ -1,0 +1,98 @@
+/* General Styling for Products Page */
+.products-section {
+    padding: 60px 20px;
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Section Title */
+.category-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: left;
+    border-left: 6px solid #ff5722;
+    padding-left: 15px;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+
+.category-title:hover {
+    color: #000;
+}
+
+/* Description Styling */
+.category-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 20px;
+    color: #555;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* Image Grid Styling */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+    justify-items: center; /* Centers the images */
+}
+
+.product-image {
+    width: 100%;
+    max-width: 300px; /* Limit image size */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-title {
+        font-size: 2rem;
+        text-align: center;
+        border-left: none;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two images per row */
+        gap: 20px;
+    }
+
+    .category-description {
+        text-align: left; /* Align text to the left */
+        font-size: 1rem;
+        padding: 0 15px; /* Reduce padding to fit the screen */
+    }
+}
+
+@media (max-width: 480px) {
+    .category-title {
+        font-size: 1.6rem;
+    }
+
+    .product-image {
+        max-width: 100%; /* Ensure images are fully responsive */
+    }
+
+    .category-description {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* Single column grid on small screens */
+        gap: 15px;
+    }
+}

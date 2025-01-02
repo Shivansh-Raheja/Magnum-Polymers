@@ -194,9 +194,12 @@ const HomePage = () => {
           </div>
 
           {/* Call-to-Action Button */}
-          <div className="cta-container">
+                  <div className="cta-container">
+          <Link to="/products">
             <button className="cta-button">See All Products</button>
-          </div>
+          </Link>
+        </div>
+
         </div>
       </div>
     </section>
