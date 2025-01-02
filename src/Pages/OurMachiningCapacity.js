@@ -34,7 +34,7 @@ const machines = [
       },
       { 
         name: "Optical 2D Coordinate Measuring Machine", 
-        image: "/IMG_1800-removebg-preview.png", 
+        image: "/optiv-lite-olm-01.jpg", 
         description: "The Optical 2D Coordinate Measuring Machine (CMM) is used for precise measurement of parts and components. It uses optical sensors to capture the dimensions of objects, providing high accuracy without physical contact. This machine is ideal for inspecting delicate or small components. It allows for quick and non-destructive testing. With its advanced software, it generates detailed reports for quality control. The machine is critical for industries requiring stringent dimensional checks. It ensures product consistency and compliance with standards. Its non-contact nature makes it suitable for fragile or sensitive materials."
       }
 ];
