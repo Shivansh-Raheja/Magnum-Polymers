@@ -36,19 +36,19 @@ const AboutUs = () => {
       <div className="content">
         <h2>About Us</h2>
         <p>
-          Magnum polymers, was established in the year 1991 by Mr. Rajeev Trehan,
+          Magnum Wonderplast, was established in the year 1991 by Mr. Rajeev Trehan,
           qualified Plastics Technologist who is also presently the Managing
           Director of the company.
         </p>
         <p>
-          Magnum Polymers has got experience of working with big corporates like
+          Magnum Wonderplast has got experience of working with big corporates like
           SAMSUNG, HERO, EMERSON, JTEKT, SONA & SYSTEMAIR and satisfying them
           over the years. Presently, Magnum Polymers is known for its quality
           Injection & blow moulded products, problem solving techniques, Cost
           reduction projects, Imports replacements and its active CSR activities.
         </p>
         <p>
-          Magnum Polymers is an ISO 9001 & 14001 certified Company based at
+          Magnum Wonderplast is an ISO 9001 & 14001 certified Company based at
           biggest industrial hub at FARIDABAD in Delhi NCR. We seek to produce
           quality products which are the integral part of various industrial
           products useful in our daily life. We have been a constant supplier to
