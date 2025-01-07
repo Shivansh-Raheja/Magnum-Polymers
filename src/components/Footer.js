@@ -73,7 +73,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>© 2024 All Rights Reserved | Wonderplast-Magnum</p>
+        <p>© 2024 All Rights Reserved | Magnum-Wonderplast</p>
       </div>
     </footer>
   );

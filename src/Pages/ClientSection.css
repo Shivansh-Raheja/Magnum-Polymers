@@ -69,10 +69,21 @@
   .text-container p {
       font-size: 1rem;
   }
+
+  .client-tile {
+    width: 48%; /* Adjust width to show 2 logos side by side */
+    margin: 1% 0; /* Ensure space between tiles */
+    display: inline-block; /* Align tiles horizontally */
+  }
 }
 
 @media (max-width: 480px) {
   .text-container {
       text-align: center;
+  }
+  
+  .client-tile {
+    width: 100%; /* Ensure two logos are shown side by side */
+    text-align: center;
   }
 }

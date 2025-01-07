@@ -33,9 +33,10 @@ const HomePage = () => {
     { src: '/3.mp4', alt: 'Work Video 3' },
     { src: '/4.mp4', alt: 'Work Video 4' },
     { src: '/5.mp4', alt: 'Work Video 5' },
-    { src: '/4.mp4', alt: 'Work Video 6' },
-    { src: '/1.mp4', alt: 'Work Video 5' },
-    { src: '/3.mp4', alt: 'Work Video 6' },
+    { src: '/6.mp4', alt: 'Work Video 6' },
+    // { src: '/4.mp4', alt: 'Work Video 6' },
+    // { src: '/1.mp4', alt: 'Work Video 5' },
+    // { src: '/3.mp4', alt: 'Work Video 6' },
   ];
 
   // Change video every 10 seconds
@@ -116,9 +117,11 @@ const HomePage = () => {
             playsInline
           />
           <div className="video-overlay">
-            <h1 className="banner-title">Welcome to Wonderplast Magnum</h1>
+            <h1 className="banner-title">Welcome to Magnum Wonderplast </h1>
             <p className="banner-subtitle">Innovating for a better tomorrow</p>
-            <button className="cta-button">Learn More</button>
+            <Link to="/about-us">
+              <button className="cta-button">Learn More</button>
+            </Link>
           </div>
         </div>
       </section>
