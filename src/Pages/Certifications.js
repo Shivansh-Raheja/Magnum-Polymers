@@ -23,7 +23,7 @@ const Certifications = () => {
             <img src="/cert1.png" alt="Maruti ACE Certification" />
           </div>
           <div className="machining-text">
-            <h2>Maruti ACE Certification</h2>
+            <h2>Green Vendor Certification by MACE</h2>
             <p>
               We are proud to be certified by Maruti ACE, a recognition of our commitment to delivering high-quality automotive parts. This certification validates our strict adherence to manufacturing standards that meet Maruti's rigorous quality requirements. It showcases our capability in producing components that meet the precise specifications of the automotive industry.
               <br /><br />

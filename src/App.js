@@ -9,6 +9,7 @@ import OurMachiningCapacity from './Pages/OurMachiningCapacity';
 import PlantsPhotosVideos from './Pages/PlantsPhotosVideos';
 import Machines from './Pages/Machinelist';
 import Certifications from './Pages/Certifications';
+import MissionVisionAndQualityPolicy from './Pages/Mission';
 
 import './App.css'; // Ensure you have your styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -47,6 +48,10 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/about-us/certifications" element={<Certifications />} />
+          {/* Add routes for other sections like About Us, Products, etc. */}
+        </Routes>
+        <Routes>
+          <Route path="/about-us/mission-vision" element={<MissionVisionAndQualityPolicy />} />
           {/* Add routes for other sections like About Us, Products, etc. */}
         </Routes>
         <Footer />
