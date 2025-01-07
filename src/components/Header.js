@@ -43,7 +43,6 @@ const Header = () => {
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/about-us/certifications">Certifications</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/about-us/mission-vision">Mission & Vision and Quality Policy</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/about-us/culture">Our Magnificent Culture</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/about-us/awards-recognition">Awards & Recognition</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="PRODUCTS" id="products-dropdown" className={location.pathname.startsWith('/products') ? 'active' : ''}>
