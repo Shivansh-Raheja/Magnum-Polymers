@@ -1,0 +1,160 @@
+.machining-container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .page-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .machining-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .machining-item.right {
+    transform: translateX(100px);
+  }
+  
+  .machining-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .machining-content {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    gap: 20px;
+    background-color: #fafafa;
+  }
+  
+  .machining-item.right .machining-content {
+    flex-direction: row-reverse;
+  }
+  
+  .machining-image {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .machining-image img {
+    max-width: 100%;
+    max-height: 280px; /* Set max height to avoid oversized images */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: contain; /* Ensure image fits without cropping */
+  }
+  
+  .machining-text {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .machining-text h2,
+  .machining-text p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .machining-item.visible .machining-text h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+  }
+  
+  .machining-item.visible .machining-text p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+  }
+  
+  @media (max-width: 1024px) {
+    .machining-content {
+      gap: 15px;
+    }
+  
+    .machining-text {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .machining-text h2 {
+      font-size: 1.8rem;
+    }
+  
+    .machining-text p {
+      font-size: 1rem;
+    }
+  
+    .machining-image img {
+      max-height: 180px; /* Adjust the height on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .machining-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .machining-item.right .machining-content {
+      flex-direction: column;
+    }
+  
+    .machining-image {
+      margin-bottom: 20px;
+    }
+  
+    .machining-text {
+      padding: 10px;
+    }
+  
+    .machining-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .machining-text p {
+      font-size: 0.9rem;
+      text-align: justify;
+    }
+  
+    .machining-image img {
+      max-height: 160px; /* Adjust image height on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .machining-content {
+      padding: 15px;
+      gap: 10px;
+    }
+  
+    .machining-text h2 {
+      font-size: 1.3rem;
+    }
+  
+    .machining-text p {
+      font-size: 0.8rem;
+    }
+  
+    .machining-image img {
+      max-height: 140px; /* Further reduce image height on very small screens */
+    }
+  }
+  
