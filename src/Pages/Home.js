@@ -116,7 +116,7 @@ const HomePage = () => {
             playsInline
           />
           <div className="video-overlay">
-            <h1 className="banner-title">Welcome to Magnum Polymers</h1>
+            <h1 className="banner-title">Welcome to Wonderplast Magnum</h1>
             <p className="banner-subtitle">Innovating for a better tomorrow</p>
             <button className="cta-button">Learn More</button>
           </div>
@@ -167,13 +167,12 @@ const HomePage = () => {
               components to consumer goods, we ensure exceptional quality and
               reliability in every product we offer.
             </p>
-          </div>
-          <div className="animated-man">
-            <img
-              src="/vecteezy_3d-male-character-presenting-to-the-left_24785833.png" // Replace with an actual animation or GIF of a man
-              alt="Animated Man"
-              className="lazyload"
-            />
+            <p>
+            Wonderplast Magnum is a leading manufacturing firm specializing in high-quality products for the automotive industry and advanced moulding solutions. With a commitment to innovation and precision, the company produces a diverse range of components that cater to the evolving needs of modern vehicles, including dashboards, interior panels, and exterior trims. Leveraging state-of-the-art technology and a highly skilled workforce, Wonderplast Magnum excels in delivering durable, lightweight, and aesthetically pleasing products that enhance vehicle performance and design. Their moulding expertise ensures custom solutions for complex requirements, making them a trusted partner for top automotive brands worldwide.
+            </p>
+            <p>
+            At Wonderplast Magnum, excellence in manufacturing is at the core of every operation. The firm is renowned for its cutting-edge moulding techniques that enable the production of intricate and robust components for the automotive sector. By integrating sustainable practices and using advanced materials, Wonderplast Magnum ensures its products not only meet but exceed industry standards for safety, efficiency, and environmental responsibility.
+            </p>
           </div>
         </div>
 
@@ -205,7 +204,7 @@ const HomePage = () => {
     </section>
 
     <ClientsSection />
-    <OurService />
+    {/* <OurService /> */}
 
     </div>
   );

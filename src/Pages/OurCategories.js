@@ -43,7 +43,7 @@ const OurCategories = () => {
             alt="Blow Moulding"
             className="lazyload"
           />
-          <div className="category-label">Blow Moulding</div>
+          <div className="category-label">Injection & Insert Moulding</div>
         </Link>
 
         <Link to="/injection-insert-moulding" className="product-tiles">
@@ -53,7 +53,7 @@ const OurCategories = () => {
             alt="Injection & Insert Moulding"
             className="lazyload"
           />
-          <div className="category-label">Injection & Insert Moulding</div>
+          <div className="category-label">Blow Moulding</div>
         </Link>
 
         <Link to="/inhouse-tooling-spm" className="product-tiles">

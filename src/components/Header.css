@@ -102,3 +102,47 @@
         font-size: 18px;  /* Slightly smaller font size for smaller screens */
     }
 }
+
+/* Ensure dropdown titles are always visible */
+.navbar-custom .nav-item .dropdown-menu {
+    position: static; /* Ensure dropdown stays attached to its parent */
+    background-color: #000;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1050; /* Higher than other elements to keep it on top */
+}
+
+/* Adjustments for dropdown items */
+.navbar-custom .nav-item .dropdown-menu .dropdown-item {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ff6347; /* Highlight the dropdown title when hovering */
+}
+
+/* Hover styles for dropdown menu items */
+.navbar-custom .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #ff6347;
+    color: #000;
+}
+
+/* Align dropdown menus properly and ensure they are visible */
+@media (max-width: 992px) {
+    .navbar-custom .nav-item .dropdown-menu {
+        width: 100%; /* Full width dropdown on small screens */
+        position: relative; /* Prevent overlapping issues */
+    }
+
+    .navbar-custom .nav-item .dropdown-menu .dropdown-item {
+        text-align: center; /* Center align for better UX on mobile */
+    }
+}
+
+/* Keep dropdown titles visible */
+.navbar-custom .nav-item {
+    position: relative; /* Allow dropdown to align properly */
+}
