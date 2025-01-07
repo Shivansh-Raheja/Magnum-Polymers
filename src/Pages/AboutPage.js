@@ -37,7 +37,7 @@ const AboutPage = () => {
           <div className="about-video-container">
             <video
               className="about-video"
-              src="/Mango AI Work_20250107-135355.mp4" // Replace with your video source
+              src="/Mango AI Work_20250108-000633.mp4" // Replace with your video source
               autoPlay
               loop
               muted
@@ -50,7 +50,7 @@ const AboutPage = () => {
           {/* Right: Text Content */}
           <div className="about-text">
             <p>
-              Magnum Polymers is a leading name in the polymer industry,
+              Magnum Wonderplast is a leading name in the polymer industry,
               delivering innovative and sustainable solutions for a diverse
               range of industries. With decades of expertise, state-of-the-art
               infrastructure, and a dedicated team, we have consistently set
