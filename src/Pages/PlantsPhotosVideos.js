@@ -23,7 +23,7 @@ const plants = [
 const PlantsPhotos = () => {
   return (
     <div className="plants-container">
-      <h1 className="title">Our Plants-:Photos and Videos</h1>
+      <h1 className="title">Our Plants Details</h1>
       
       <div className="plants-gallery">
         {plants.map((plant, index) => (

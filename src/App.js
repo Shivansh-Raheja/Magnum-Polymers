@@ -7,6 +7,7 @@ import AboutPage from './Pages/AboutPage';
 import Products from './Pages/Products';
 import OurMachiningCapacity from './Pages/OurMachiningCapacity';
 import PlantsPhotosVideos from './Pages/PlantsPhotosVideos';
+import Machines from './Pages/Machinelist';
 
 import './App.css'; // Ensure you have your styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -37,6 +38,10 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/plant-photos-and-videos" element={<PlantsPhotosVideos />} />
+          {/* Add routes for other sections like About Us, Products, etc. */}
+        </Routes>
+        <Routes>
+          <Route path="/infrastructure/machine_capacity" element={<Machines />} />
           {/* Add routes for other sections like About Us, Products, etc. */}
         </Routes>
         <Footer />

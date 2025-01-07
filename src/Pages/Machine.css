@@ -1,0 +1,119 @@
+.machining-capacity {
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .machines-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .machine-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .machine-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .machine-title {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .machines-table {
+    overflow-x: auto;
+  }
+  
+  .machines-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .machines-table th,
+  .machines-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+  }
+  
+  .machines-table th {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  .machines-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .machines-table tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .section-description {
+      font-size: 0.9rem;
+    }
+  
+    .machines-table th,
+    .machines-table td {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.6rem;
+    }
+  
+    .section-description {
+      font-size: 0.8rem;
+    }
+  
+    .machines-table th,
+    .machines-table td {
+      font-size: 0.75rem;
+      padding: 8px;
+    }
+  }
+  

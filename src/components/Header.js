@@ -55,14 +55,11 @@ const Header = () => {
               CAPABILITIES
             </Nav.Link>
             <NavDropdown title="INFRASTRUCTURE" id="infrastructure-dropdown" className={location.pathname.startsWith('/infrastructure') ? 'active' : ''}>
-              <NavDropdown.Item as={Link} to="/infrastructure">VIEW INFRASTRUCTURE</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/infrastructure/machine_capacity">VIEW INFRASTRUCTURE</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/plant-photos-and-videos">PLANTS PHOTOS</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/infrastructure/machines-capabilities">LIST OF MACHINES AND CAPABILITIES</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/infrastructure/machine_capacity">LIST OF MACHINES AND CAPABILITIES</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/certificates" className={location.pathname === '/certificates' ? 'active' : ''}>
-              CERTIFICATIONS
-            </Nav.Link>
             <Nav.Link as={Link} to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
               CONTACT US
             </Nav.Link>

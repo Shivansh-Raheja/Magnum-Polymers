@@ -36,6 +36,11 @@ const machines = [
         name: "Optical 2D Coordinate Measuring Machine", 
         image: "/optiv-lite-olm-01.jpg", 
         description: "The Optical 2D Coordinate Measuring Machine (CMM) is used for precise measurement of parts and components. It uses optical sensors to capture the dimensions of objects, providing high accuracy without physical contact. This machine is ideal for inspecting delicate or small components. It allows for quick and non-destructive testing. With its advanced software, it generates detailed reports for quality control. The machine is critical for industries requiring stringent dimensional checks. It ensures product consistency and compliance with standards. Its non-contact nature makes it suitable for fragile or sensitive materials."
+      },
+      { 
+        name: "CRYSTA-Apex coordinate measuring machine", 
+        image: "/mut3.jpg", 
+        description: "The latest generation CRYSTA-Apex coordinate measuring machines, the new CRYSTA-Apex V Series, is packed with state of the art technology, necessary for performing very accurate measurements at high speed. All new, using Mitutoyo’s world-renowned ABS scales, the CRYSTA-Apex V series has a high resistance to environmental conditions and does not require to perform homing upon start-up. SMS capability enables status and service monitoring, ready for use in a Smart Factory environment.A future proof investment, the CRYSTA-Apex V is capable of tackling any task you might have in the future thanks to its ability to change or add probe systems and software with ease."
       }
 ];
 

@@ -37,7 +37,7 @@ const AboutPage = () => {
           <div className="about-video-container">
             <video
               className="about-video"
-              src="/Mango AI Work_20241230-132401.mp4" // Replace with your video source
+              src="/Mango AI Work_20250107-135355.mp4" // Replace with your video source
               autoPlay
               loop
               muted
@@ -125,7 +125,7 @@ const AboutPage = () => {
     <div className="certification-container">
         {/* Text Content */}
         <div className="certification-text">
-            <h2>By Whom We Are Certified</h2>
+            <h2>By Whom We Are Certified ?</h2>
             <p>
                 We are proud to be certified by globally recognized organizations, 
                 ensuring the highest standards of quality and excellence. Our certifications 

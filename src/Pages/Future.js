@@ -8,7 +8,7 @@ const Future = () => {
                 <div className="future-plans-text">
                     <h2 className="future-plans-header">Future Plans</h2>
                     <ul className="future-plans-list">
-                        <li className="future-plans-list-item">To Acquire 3-4 Acre Land Near By KMP Expressway, Palwal, Haryana.</li>
+                        <li className="future-plans-list-item">Acquired 3-4 Acre Land Near By KMP Expressway, Palwal, Haryana.</li>
                         <li className="future-plans-list-item">To Build In-House Power Press Production Line For High Precision Sheet Metal Parts.</li>
                         <li className="future-plans-list-item">To Build In-House Powder Coating Production Line.</li>
                         <li className="future-plans-list-item">To Build In-House Brass Insert Nut Machining Production Line.</li>
