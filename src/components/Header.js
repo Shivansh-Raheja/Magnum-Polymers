@@ -38,9 +38,16 @@ const Header = () => {
             <Nav.Link as={Link} to="/" className={location.pathname === '/' ? 'active' : ''}>
               HOME
             </Nav.Link>
-            <Nav.Link as={Link} to="/about-us" className={location.pathname === '/about-us' ? 'active' : ''}>
-              ABOUT US
-            </Nav.Link>
+            <NavDropdown title="ABOUT US" id="about-us-dropdown" className={location.pathname === '/about-us' || location.pathname.startsWith('/about-us') ? 'active' : ''}>
+              <NavDropdown.Item as={Link} to="/about-us">ABOUT US</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/about-us/milestones">Milestones</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us/certifications">Certifications</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us/mission-vision">Mission & Vision</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us/quality-policy">Quality Policy</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us/culture">Our Magnificent Culture</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us/awards-recognition">Awards & Recognition</NavDropdown.Item>
+            </NavDropdown>
             <NavDropdown title="PRODUCTS" id="products-dropdown" className={location.pathname.startsWith('/products') ? 'active' : ''}>
               <NavDropdown.Item as={Link} to="/products">VIEW ALL PRODUCTS</NavDropdown.Item>
               <NavDropdown.Divider />
