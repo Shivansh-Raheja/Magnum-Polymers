@@ -38,7 +38,7 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul className="footer-list">
             <li><a href="/Magnum Company Profile 2024-25.pptx">Profile</a></li>
-            <li><a href="#">Get a Quote</a></li>
+            <li><a href="/contact">Get a Quote</a></li>
           </ul>
         </div>
 
