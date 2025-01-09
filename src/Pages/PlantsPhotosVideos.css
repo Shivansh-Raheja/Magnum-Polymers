@@ -1,117 +1,226 @@
 /* Main container for the page */
 .plants-container {
-    padding: 30px;
-    background-color: #f0f4f7; /* Light background for the page */
-    text-align: center;
-    color: #333; /* Dark text color for better readability */
-  }
-  
-  /* Title styling */
+  padding: 30px;
+  background-color: #f0f4f7; /* Light background for the page */
+  text-align: center;
+  color: #333; /* Dark text color for better readability */
+}
+
+/* Title styling */
+.title {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Gallery for the plants */
+.plants-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Styling for each plant item */
+.plant-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.plant-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container with background */
+.plant-image-container {
+  background-color: #ddd;
+  padding: 10px;
+  border-bottom: 2px solid #f0f0f0;
+  height: 250px; /* Set fixed height for the image container */
+  overflow: hidden; /* Ensure images are cropped if needed */
+}
+
+/* Styling for the image to make it fit the container */
+.plant-image {
+  width: 100%;
+  height: 100%; /* Ensure the image covers the entire container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 8px;
+}
+
+/* Plant info (name and address) */
+.plant-info {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #555;
+}
+
+.plant-info h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.plant-info p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Upcoming Project Section */
+.upcoming-project-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.upcoming-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.upcoming-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.upcoming-image-container {
+  flex: 1;
+  max-width: 40%;
+  min-width: 300px;
+}
+
+.upcoming-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.upcoming-info {
+  flex: 1;
+  max-width: 40%;
+  min-width: 300px;
+  text-align: left;
+}
+
+.upcoming-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.upcoming-info p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 15px;
+}
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 768px) {
   .title {
-    font-size: 36px;
-    color: #222;
-    margin-bottom: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  /* Gallery for the plants */
-  .plants-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  /* Styling for each plant item */
-  .plant-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .plant-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Image container with background */
-  .plant-image-container {
-    background-color: #ddd;
-    padding: 10px;
-    border-bottom: 2px solid #f0f0f0;
-    height: 250px; /* Set fixed height for the image container */
-    overflow: hidden; /* Ensure images are cropped if needed */
-  }
-  
-  /* Styling for the image to make it fit the container */
-  .plant-image {
-    width: 100%;
-    height: 100%; /* Ensure the image covers the entire container */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    border-radius: 8px;
-  }
-  
-  /* Plant info (name and address) */
-  .plant-info {
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    color: #555;
-  }
-  
-  .plant-info h2 {
     font-size: 24px;
-    color: #222;
-    margin-bottom: 10px;
-    font-weight: bold;
   }
-  
+
+  .plants-gallery {
+    grid-template-columns: repeat(2, 1fr); /* Two items per row on smaller screens */
+  }
+
+  .plant-info h2 {
+    font-size: 20px;
+  }
+
   .plant-info p {
-    font-size: 16px;
-    color: #777;
-    line-height: 1.5;
+    font-size: 14px;
   }
-  
-  /* Styling for mobile screens */
-  @media (max-width: 768px) {
-    .title {
-      font-size: 24px;
-    }
-  
-    .plants-gallery {
-      grid-template-columns: repeat(2, 1fr); /* Two items per row on smaller screens */
-    }
-  
-    .plant-info h2 {
-      font-size: 20px;
-    }
-  
-    .plant-info p {
-      font-size: 14px;
-    }
+
+  .upcoming-project {
+    flex-direction: column;
+    gap: 20px; /* Add space between image and info */
   }
-  
-  /* Styling for extra small screens */
-  @media (max-width: 576px) {
-    .title {
-        font-size: 20px;
-      }
-    .plants-gallery {
-      grid-template-columns: 1fr; /* One item per row on very small screens */
-    }
-  
-    .plant-info h2 {
-      font-size: 18px;
-    }
-  
-    .plant-info p {
-      font-size: 12px;
-    }
+
+  .upcoming-title {
+    font-size: 1.5rem;
   }
-  
+
+  .upcoming-image-container,
+  .upcoming-info {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .upcoming-info h3 {
+    font-size: 1.25rem;
+  }
+
+  .upcoming-info p {
+    font-size: 0.95rem;
+  }
+
+  .disclaimer {
+    font-size: 0.85rem;
+  }
+}
+
+/* Responsive Styles for Extra Small Screens */
+@media (max-width: 576px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .plants-gallery {
+    grid-template-columns: 1fr; /* One item per row on very small screens */
+  }
+
+  .plant-info h2 {
+    font-size: 18px;
+  }
+
+  .plant-info p {
+    font-size: 12px;
+  }
+
+  .upcoming-project {
+    flex-direction: column;
+    gap: 15px; /* Reduce space between image and info */
+  }
+
+  .upcoming-title {
+    font-size: 1rem;
+  }
+
+  .upcoming-image-container,
+  .upcoming-info {
+    max-width: 100%; /* Ensure both sections take full width */
+  }
+
+  .upcoming-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .upcoming-info p {
+    font-size: 0.9rem;
+  }
+
+  .disclaimer {
+    font-size: 0.8rem;
+  }
+}
