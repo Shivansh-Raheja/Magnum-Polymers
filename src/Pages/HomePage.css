@@ -225,7 +225,8 @@
   }
   
   .left-side .intro-text {
-    text-align: left;
+    text-align: justify;
+    padding: 10%;
   }
   
   .left-side .intro-text h2 {
