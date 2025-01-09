@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./OurMachiningCapacity.css";
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const machines = [
     { 
@@ -13,9 +16,9 @@ const machines = [
         description: "Vertical Injection Moulding machines are used to inject molten plastic into moulds under high pressure. These machines are designed for producing complex and small parts with great precision. They are highly versatile and energy-efficient. The vertical design ensures efficient space usage in factories. It is ideal for applications requiring high precision and repeatability. These machines are crucial for medical devices, electronics, and automotive components. Their compact design integrates seamlessly into modular manufacturing setups. Vertical Injection Moulding contributes significantly to reducing manufacturing defects."
       },
       { 
-        name: "In-House Tooling", 
-        image: "/In-House Tooling.jpg", 
-        description: "In-house tooling involves designing and manufacturing custom tools and dies used in various machining processes. This capability ensures full control over quality and turnaround time. We specialize in creating precise tools tailored to customer specifications. In-house tooling reduces lead times and enhances production efficiency. It allows for better customization and cost management in manufacturing. This approach minimizes dependency on external vendors and ensures rapid prototyping. The flexibility of in-house tooling supports innovation and process optimization. It plays a vital role in maintaining stringent quality standards."
+        name: "Tool-Room", 
+        image: "/toolroom.jpg", 
+        description: "Tool-Room involves designing and manufacturing custom tools and dies used in various machining processes. This capability ensures full control over quality and turnaround time. We specialize in creating precise tools tailored to customer specifications. It reduces lead times and enhances production efficiency. It allows for better customization and cost management in manufacturing. This approach minimizes dependency on external vendors and ensures rapid prototyping. The flexibility of in-house tooling supports innovation and process optimization. It plays a vital role in maintaining stringent quality standards."
       },
       { 
         name: "Insert Moulding", 
@@ -44,6 +47,15 @@ const machines = [
       }
 ];
 
+const additionalMachines = [
+  { name: "HAAS VMC : VF2", image: "/machine1.png" },
+  { name: "PHILIPS EDM : PZE 400", image: "/machine2.png" },
+  { name: "VMC : VM 700", image: "/machine3.jpg" },
+  { name: "PRECICUT VERTICAL MILLING MACHINE ", image: "/machine4.jpg" },
+  { name: "PHILIPS WIRECUT", image: "/machine5.png" },
+  { name: "PHILIPS EDM DRIL", image: "/machine6.jpg" }
+];
+
 const OurMachiningCapacity = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -67,6 +79,31 @@ const OurMachiningCapacity = () => {
       handleScroll(); // Trigger on mount
       return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const carouselSettings = {
+      dots: false,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows:false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    };
+  
   
     return (
       <div className="machining-container">
@@ -89,6 +126,18 @@ const OurMachiningCapacity = () => {
             </div>
           </div>
         ))}
+
+<h2 className="carousel-title">Explore More</h2>
+      <Slider {...carouselSettings} className="machining-carousel">
+        {additionalMachines.map((machine, index) => (
+          <div key={index} className="carousel-item">
+            <div className="carousel-image">
+              <img src={machine.image} alt={machine.name} />
+            </div>
+            <h3>{machine.name}</h3>
+          </div>
+        ))}
+      </Slider>
       </div>
     );
   };
