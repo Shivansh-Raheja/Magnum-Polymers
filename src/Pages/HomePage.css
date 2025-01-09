@@ -14,6 +14,23 @@
     align-items: center;
     justify-content: center;
   }
+
+  .steering-icon {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .steering-icon img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+  
+  .steering-icon.rotate {
+    transform: rotate(360deg);
+  }
   
   .video-container {
     position: relative;
@@ -47,8 +64,13 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* Adds spacing between elements */
   }
+  
   
   .banner-title {
     font-size: 4rem;
@@ -106,6 +128,10 @@
     }
     .cta-button {
       font-size: 1rem;
+    }
+    .steering-icon {
+      width: 100px;
+      height: 100px;
     }
   }
 

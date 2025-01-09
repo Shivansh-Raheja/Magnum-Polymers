@@ -104,30 +104,48 @@ const HomePage = () => {
       video.pause();
     }
   };
+
+  const handleSteeringClick = (link) => {
+    const steeringIcon = document.querySelector('.steering-icon');
+    steeringIcon.classList.add('rotate');
+  
+    // Navigate to the linked page after the animation
+    setTimeout(() => {
+      window.location.href = link;
+    }, 1000); // Delay to allow the rotation animation to complete
+  };
+  
   
 
   return (
     <div className="homepage">
       {/* Video Banner Section */}
       <section className="video-banner">
-        <div className="video-container">
-          <video
-            src={videos[currentVideo].src}
-            className="video-banner-content"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-          <div className="video-overlay">
-            <h1 className="banner-title">Welcome to Magnum Wonderplast </h1>
-            <p className="banner-subtitle">Innovating for a better tomorrow</p>
-            <Link to="/about-us">
-              <button className="cta-button">Learn More</button>
-            </Link>
-          </div>
-        </div>
-      </section>
+  <div className="video-container">
+    <video
+      src={videos[currentVideo].src}
+      className="video-banner-content"
+      autoPlay
+      loop
+      muted
+      playsInline
+    />
+    <div className="video-overlay">
+      <h1 className="banner-title">Welcome to Magnum Wonderplast</h1>
+      <p className="banner-subtitle">Innovating for a better tomorrow</p>
+      <div
+        className="steering-icon"
+        onClick={() => handleSteeringClick('/about-us')}
+      >
+        <img
+          src="/steer.png"
+          alt="Car Steering"
+          className="steering-image"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
       <AboutUs />
 
