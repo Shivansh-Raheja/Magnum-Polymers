@@ -87,7 +87,7 @@ const OurMachiningCapacity = () => {
       slidesToScroll: 1,
       arrows:false,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 600,
       responsive: [
         {
           breakpoint: 1024,
