@@ -107,16 +107,14 @@ const HomePage = () => {
 
   const handleSteeringClick = (link) => {
     const steeringIcon = document.querySelector('.steering-icon');
-    steeringIcon.classList.add('rotate');
+    steeringIcon.classList.add('push-effect');
   
     // Navigate to the linked page after the animation
     setTimeout(() => {
       window.location.href = link;
-    }, 2000); // Delay to allow the rotation animation to complete
+    }, 1000); // Delay to allow the push animation to complete
   };
   
-  
-
   return (
     <div className="homepage">
       {/* Video Banner Section */}
@@ -131,8 +129,8 @@ const HomePage = () => {
       playsInline
     />
     <div className="video-overlay">
-      <h1 className="banner-title">Welcome to Magnum Wonderplast</h1>
-      <p className="banner-subtitle">Innovating for a better tomorrow</p>
+      <h1 className="banner-title">Welcome to Magnum Wonderplast Private Limited</h1>
+      <p className="banner-subtitle">We Mould Your Ideas</p>
       <div
         className="steering-icon"
         onClick={() => handleSteeringClick('/about-us')}
