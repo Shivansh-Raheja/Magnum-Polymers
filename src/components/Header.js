@@ -40,7 +40,6 @@ const Header = () => {
             </Nav.Link>
             <NavDropdown title="ABOUT US" id="about-us-dropdown" className={location.pathname === '/about-us' || location.pathname.startsWith('/about-us') ? 'active' : ''}>
               <NavDropdown.Item as={Link} to="/about-us">ABOUT US</NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/about-us/milestones">MILESTONES</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/about-us/certifications">CERTIFICATIONS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/about-us/mission-vision">MISSION,VISSION AND GOALS</NavDropdown.Item>
@@ -48,7 +47,6 @@ const Header = () => {
             </NavDropdown>
             <NavDropdown title="PRODUCTS" id="products-dropdown" className={location.pathname.startsWith('/products') ? 'active' : ''}>
               <NavDropdown.Item as={Link} to="/products">VIEW ALL PRODUCTS</NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/products/steering-components">MOTOR VEHICLE & COMMERCIAL VEHICLES STEERING COMPONENTS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/hub-components">MOTOR VEHICLE HUB COMPONENTS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/hvac-ducts">MOTOR & COMMERCIAL VEHICLE HV DUCT ASSEMBLY FILTER ELEMENTS</NavDropdown.Item>
@@ -61,9 +59,14 @@ const Header = () => {
             </Nav.Link>
             <NavDropdown title="INFRASTRUCTURE" id="infrastructure-dropdown" className={location.pathname.startsWith('/infrastructure') ? 'active' : ''}>
               <NavDropdown.Item as={Link} to="/infrastructure/machine_capacity">VIEW INFRASTRUCTURE</NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/plant-photos-and-videos">PLANTS PHOTOS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/infrastructure/machine_capacity">LIST OF MACHINES AND CAPABILITIES</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="GOOD MANUFACTURING PRACTICES" id="gmp-dropdown" className={location.pathname.startsWith('/good-manufacturing-practices') ? 'active' : ''}>
+              <NavDropdown.Item as={Link} to="/good-manufacturing-practices/events">EVENTS</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/good-manufacturing-practices/training">TRAINING</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/good-manufacturing-practices/health-safety">HEALTH AND SAFETY</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/good-manufacturing-practices/innovations-kaizens">INNOVATIONS AND KAIZENS</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
               CONTACT US
