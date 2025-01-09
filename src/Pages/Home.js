@@ -138,7 +138,7 @@ const HomePage = () => {
         onClick={() => handleSteeringClick('/about-us')}
       >
         <img
-          src="/steer.png"
+          src="/st.png"
           alt="Car Steering"
           className="steering-image"
         />
