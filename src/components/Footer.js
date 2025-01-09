@@ -14,7 +14,7 @@ const Footer = () => {
             <li><FaWhatsapp /> +91 93184 93058</li>
             <li><FaEnvelope /> magnumpolymers@gmail.com</li>
             <li><FaMapMarkerAlt /> Plot No:14,25,30 Sector-59,</li>
-            <li> Hsidc Ind Estate, Faridabad 121004,</li>
+            <li>Ind Estate, Faridabad 121004,</li>
             <li>Haryana, India</li>
             <li className="social-links">
               <a href="#"><FaFacebook /></a>

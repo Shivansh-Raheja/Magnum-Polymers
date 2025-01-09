@@ -41,6 +41,7 @@ const Header = () => {
             <NavDropdown title="ABOUT US" id="about-us-dropdown" className={location.pathname === '/about-us' || location.pathname.startsWith('/about-us') ? 'active' : ''}>
               <NavDropdown.Item as={Link} to="/about-us">ABOUT US</NavDropdown.Item>
               <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/about-us/milestones">MILESTONES</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/about-us/certifications">CERTIFICATIONS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/about-us/mission-vision">MISSION,VISSION AND GOALS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/about-us/awards-recognition">AWARDS AND RECOGNITION</NavDropdown.Item>

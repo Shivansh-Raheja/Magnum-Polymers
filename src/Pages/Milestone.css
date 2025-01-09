@@ -1,0 +1,67 @@
+.milestones-container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+  }
+  
+  .milestones-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .milestones-content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Ensures equal height for both containers */
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .milestones-text {
+    flex: 1;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+  }
+  
+  .milestones-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .milestones-text li {
+    margin-bottom: 15px; /* Adds more distance between bullet points */
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .milestones-image {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Centers the image vertically */
+  }
+  
+  .milestones-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .milestones-content {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .milestones-text {
+      text-align: justify;
+    }
+  }
+  

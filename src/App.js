@@ -12,6 +12,7 @@ import Certifications from './Pages/Certifications';
 import MissionVisionAndQualityPolicy from './Pages/Mission';
 import AwardsRecognition from './Pages/Awards';
 import ContactUs from './Pages/Contact';
+import Milestones from './Pages/Milestone';
 
 import './App.css'; // Ensure you have your styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -58,6 +59,10 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/about-us/awards-recognition" element={<AwardsRecognition />} />
+          {/* Add routes for other sections like About Us, Products, etc. */}
+        </Routes>
+        <Routes>
+          <Route path="/about-us/milestones" element={<Milestones />} />
           {/* Add routes for other sections like About Us, Products, etc. */}
         </Routes>
         <Routes>
