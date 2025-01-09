@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './Mission.css';
 
 const MissionVision = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {

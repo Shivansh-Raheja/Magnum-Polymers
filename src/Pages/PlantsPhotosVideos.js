@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import './PlantsPhotosVideos.css'; // Custom CSS for styling
 
 const plants = [
@@ -21,6 +22,9 @@ const plants = [
 ];
 
 const PlantsPhotos = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="plants-container">
       <h1 className="title">Our Plants Details</h1>

@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import './Cetifications.css';  // Assuming the CSS is in this file
 
 const Certifications = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     // Adding the visible class to make animations work

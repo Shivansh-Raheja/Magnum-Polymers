@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import './Awards.css';
 
 const awardsData = [
@@ -12,6 +13,9 @@ const awardsData = [
 ];
 
 const AwardsRecognition = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="awards-container">
       <h1 className="page-heading">Our Achievements</h1>

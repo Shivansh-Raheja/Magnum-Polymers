@@ -1,7 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
 import './Machine.css'; // Add your custom CSS file for styling
 
 const Machines = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const machinesData = [
     { id: 1, machineType: 'LATHE MACHINE', capacity: '6 FEET', make: 'GD' },
     { id: 2, machineType: 'LATHE MACHINE16', capacity: '4 FEET', make: 'GD' },

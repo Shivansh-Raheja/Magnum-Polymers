@@ -5,6 +5,9 @@ import Future from './Future';
 import './AboutPage.css';
 
 const AboutPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     useEffect(() => {
         const counters = document.querySelectorAll('.counter');
         const speed = 200;

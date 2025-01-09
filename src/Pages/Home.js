@@ -9,6 +9,9 @@ import AboutUs from './Aboutus';
 import OurCategories from './OurCategories';
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [currentVideo, setCurrentVideo] = useState(0);
   const location = useLocation();
   const [isVisibleGallery, setIsVisibleGallery] = useState(false);

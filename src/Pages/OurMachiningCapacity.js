@@ -45,6 +45,9 @@ const machines = [
 ];
 
 const OurMachiningCapacity = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     const [visibleIndexes, setVisibleIndexes] = useState([]);
   
     const handleScroll = () => {
