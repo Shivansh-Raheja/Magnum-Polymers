@@ -15,6 +15,7 @@ import ContactUs from './Pages/Contact';
 import Milestones from './Pages/Milestone';
 import Training from './Pages/Training';
 import HealthSafety from './Pages/Health';
+import LogoAnimation from './Pages/LogoAnimation';
 
 import './App.css'; // Ensure you have your styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,6 +24,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+      <LogoAnimation />
         {/* Include the Header component */}
         <Header />
 
