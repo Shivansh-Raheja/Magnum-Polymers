@@ -42,8 +42,8 @@ const AboutUs = () => {
         </p>
         <p>
           Magnum Wonderplast has got experience of working with big corporates like
-          SAMSUNG, HERO, EMERSON, JTEKT, SONA & SYSTEMAIR and satisfying them
-          over the years. Presently, Magnum Polymers is known for its quality
+          HMC, KOYO, SANDEN, EMERSON, JTEKT, SONA & SYSTEMAIR and satisfying them
+          over the years. Presently, Magnum Wonderplast is known for its quality
           Injection & blow moulded products, problem solving techniques, Cost
           reduction projects, Imports replacements and its active CSR activities.
         </p>

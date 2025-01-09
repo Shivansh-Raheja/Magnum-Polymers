@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -10,7 +10,8 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Contact Us</h3>
           <ul className="footer-list">
-            <li><FaPhoneAlt /> +91-98110 61756</li>
+            <li><FaWhatsapp /> +91-98110 61756</li>
+            <li><FaWhatsapp /> +91 93184 93058</li>
             <li><FaEnvelope /> magnumpolymers@gmail.com</li>
             <li><FaMapMarkerAlt /> Plot No:14,25,30 Sector-59,</li>
             <li> Hsidc Ind Estate, Faridabad 121004,</li>
@@ -44,13 +45,13 @@ const Footer = () => {
 
         {/* Column 4: Plants Outside India */}
         <div className="footer-column">
-          <h3>Plants Outside India</h3>
+          <h3>Global Contacts</h3>
           <ul className="footer-list">
             <li>
               <img src="/mexico.png" alt="Mexico Flag" className="footer-flag" />
               <div>Mexico</div>
-              <div>Mr. Suresh Rajgopal</div>
-              <div><a href="mailto:sr@magnumpolymers.com">sr@magnumpolymers.com</a></div>
+              <div>Mr. Suresh Rajagopalan</div>
+              <div><a href="mailto:sr@magnumpolymers.com">sr@magnumwonderplast.com</a></div>
               <div>+1 647 961 1283</div>
             </li>
             <li>
@@ -72,7 +73,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>© 2024 All Rights Reserved | Magnum-Wonderplast</p>
+        <p>© 2025 All Rights Reserved | Magnum-Wonderplast</p>
       </div>
     </footer>
   );

@@ -15,6 +15,8 @@ const ClientsSection = () => {
     { id: 9, logo: '/c9.png' },
     { id: 10, logo: '/c10.png' },
     { id: 11, logo: '/c11.png' },
+    { id: 21, logo: '/c21.png' },
+    { id: 22, logo: '/c22.png' },
   ];
 
   const indirectClients = [
@@ -67,7 +69,7 @@ const ClientsSection = () => {
         </div>
 
         <div className="subheading">
-          <h3>Brands directly served by us</h3>
+          <h3>Brands directly served</h3>
         </div>
         <div className="slider-container">
           <Slider {...sliderSettings}>
@@ -80,7 +82,7 @@ const ClientsSection = () => {
         </div>
 
         <div className="subheading">
-          <h3>Brands served indirectly by us</h3>
+          <h3>Brands indirectly served</h3>
         </div>
         <div className="slider-container">
           <Slider {...sliderSettings} rtl={true}>

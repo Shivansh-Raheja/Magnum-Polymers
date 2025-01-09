@@ -53,9 +53,7 @@ const AboutPage = () => {
           {/* Right: Text Content */}
           <div className="about-text">
             <p>
-              Magnum Wonderplast is a leading name in the polymer industry,
-              delivering innovative and sustainable solutions for a diverse
-              range of industries. With decades of expertise, state-of-the-art
+            Magnum Wonderplast (P) ltd is a leading name in the Automotive IC+EV components Industry worldwide  delivering highly critical components for Steering Assy, 3rd Generation wheel Hub assys , HVAC assys for Commercial vehicles,Passenger vehicles,Two wheelers, Bicycles. With decades of expertise, state-of-the-art
               infrastructure, and a dedicated team, we have consistently set
               benchmarks in quality, reliability, and customer satisfaction.
             </p>
@@ -128,11 +126,10 @@ const AboutPage = () => {
     <div className="certification-container">
         {/* Text Content */}
         <div className="certification-text">
-            <h2>By Whom We Are Certified ?</h2>
+            <h2>By Whom We Are Accredited ?</h2>
             <p>
-                We are proud to be certified by globally recognized organizations, 
-                ensuring the highest standards of quality and excellence. Our certifications 
-                include ISO 9001 for quality management and ISO 14001 for environmental management.
+            Organizations like BSI for IATF16949-2016 AND ISO 14001 for environmental management.
+            We are also certified by Maruti Suzuki India limited as a green vendor for MACE.
             </p>
             <p>
                 These certifications validate our commitment to delivering exceptional 
