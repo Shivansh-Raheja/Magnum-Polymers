@@ -18,10 +18,10 @@ const Header = () => {
       <Container>
         <Navbar.Brand as={Link} to="/" className="logo">
           <img
-            src="/magnum.png"
+            src="/logo.png"
             alt="Polymers Logo"
             className="animate__animated animate__fadeIn"
-            style={{ width: '40px', height: 'auto' }}
+            style={{ width: '150px', height: 'auto' }}
           />
         </Navbar.Brand>
 
