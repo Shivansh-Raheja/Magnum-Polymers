@@ -1,0 +1,66 @@
+.health-safety-container {
+  padding: 40px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+  color: #333;
+}
+
+.title {
+  font-size: 40px;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.slider-container {
+  flex: 1;
+  max-width: 50%;
+  min-width: 300px;
+}
+
+.slide-image {
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 20%;
+}
+
+.text-container {
+  flex: 1;
+  max-width: 50%;
+  min-width: 300px;
+  text-align: left;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-container p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .text-container {
+    text-align: center;
+  }
+  .slide-image{
+    margin-left: 10%;
+  }
+}

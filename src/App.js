@@ -14,6 +14,7 @@ import AwardsRecognition from './Pages/Awards';
 import ContactUs from './Pages/Contact';
 import Milestones from './Pages/Milestone';
 import Training from './Pages/Training';
+import HealthSafety from './Pages/Health';
 
 import './App.css'; // Ensure you have your styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -68,6 +69,10 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/good-manufacturing-practices/training" element={<Training />} />
+          {/* Add routes for other sections like About Us, Products, etc. */}
+        </Routes>
+        <Routes>
+          <Route path="/good-manufacturing-practices/health-safety" element={<HealthSafety />} />
           {/* Add routes for other sections like About Us, Products, etc. */}
         </Routes>
         <Routes>
