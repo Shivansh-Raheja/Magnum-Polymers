@@ -65,6 +65,7 @@ const Footer = () => {
               <img src="/usa.png" alt="USA Flag" className="footer-flag" />
               <div>USA</div>
               <div>Mr. Lalit Verma</div>
+              <div><a href="mailto:lalit.verma@magnumplast.com">lalit.verma@magnumplast.com</a></div>
               <div>+1 248 778 6553</div>
             </li>
           </ul>
