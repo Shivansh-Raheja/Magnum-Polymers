@@ -16,7 +16,7 @@ const MissionVision = () => {
 
   return (
     <div className="mission-vision-container">
-      <h1 className="page-heading">Mission & Vision and Quality Policy</h1>
+      <h1 className="page-heading">Mission , Vision and Goals</h1>
 
       {/* Mission Section */}
       <div className={`mission-vision-item ${visible ? 'visible' : ''}`}>
@@ -27,10 +27,8 @@ const MissionVision = () => {
           <div className="mission-vision-text">
             <h2>Our Mission</h2>
             <p>
-              Our mission is to provide high-quality products and services that
-              exceed our customers' expectations. We aim to continuously innovate
-              and improve our processes to deliver excellence while ensuring the
-              sustainability of our business.
+            To provide our customers with a full range of value-added products and services that exceed their expectations. To develop and retain dedicated, empowered employees who share in our success. To continuously improve & to achieve profitable growth over the long term using Innovative new manufacturing  technologies to  improve the performance and optimize  the cost.
+
             </p>
             <p>
               We are committed to being a trusted partner, fostering long-term
@@ -47,10 +45,8 @@ const MissionVision = () => {
           <div className="mission-vision-text">
             <h2>Our Vision</h2>
             <p>
-              Our vision is to be a global leader in the polymer industry, known for
-              our commitment to excellence, sustainability, and customer satisfaction.
-              We strive to continuously improve and deliver value through innovative
-              solutions.
+            At Magnum Polymers our vision is to drive innovation and excellence through our precision engineering and creative solutions. We aim to revolutionize industries by providing top-tier, customized plastic molding solutions that cater to diverse needs and challenges.
+
             </p>
             <p>
               We envision expanding our reach, fostering partnerships worldwide, and
@@ -70,16 +66,14 @@ const MissionVision = () => {
             <img src="/quality.png" alt="Quality Policy" />
           </div>
           <div className="mission-vision-text">
-            <h2>Quality Policy</h2>
+            <h2>Our Goal</h2>
             <p>
-              We are committed to delivering high-quality products that meet or exceed
-              customer requirements. Our quality management system ensures continuous
-              improvement, employee involvement, and compliance with applicable regulations.
-            </p>
-            <p>
-              Our dedication to quality is integral to our business, ensuring customer
-              satisfaction and long-term success.
-            </p>
+  Our goal is to be among the top 10 automotive components providers in the industry. We are committed to delivering high-quality, innovative products that not only meet but exceed customer expectations. Through continuous improvement, we strive to enhance our manufacturing processes, ensuring efficiency and precision at every step.
+</p>
+<p>
+  By fostering a culture of excellence and engaging our skilled workforce, we aim to drive sustainable growth and solidify our position as a trusted partner in the automotive sector. Our dedication to quality, customer satisfaction, and technological advancement propels us towards achieving industry leadership and long-term success.
+</p>
+
           </div>
         </div>
       </div>
