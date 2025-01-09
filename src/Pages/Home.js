@@ -112,7 +112,7 @@ const HomePage = () => {
     // Navigate to the linked page after the animation
     setTimeout(() => {
       window.location.href = link;
-    }, 1000); // Delay to allow the rotation animation to complete
+    }, 2000); // Delay to allow the rotation animation to complete
   };
   
   
