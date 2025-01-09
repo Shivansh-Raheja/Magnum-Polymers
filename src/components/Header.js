@@ -41,18 +41,18 @@ const Header = () => {
             <NavDropdown title="ABOUT US" id="about-us-dropdown" className={location.pathname === '/about-us' || location.pathname.startsWith('/about-us') ? 'active' : ''}>
               <NavDropdown.Item as={Link} to="/about-us">ABOUT US</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/about-us/certifications">Certifications</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/about-us/mission-vision">Mission & Vision and Quality Policy</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/about-us/awards-recognition">Awards & Recognition</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us/certifications">CERTIFICATIONS</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us/mission-vision">MISSION,VISSION AND GOALS</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us/awards-recognition">AWARDS AND RECOGNITION</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="PRODUCTS" id="products-dropdown" className={location.pathname.startsWith('/products') ? 'active' : ''}>
               <NavDropdown.Item as={Link} to="/products">VIEW ALL PRODUCTS</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/products/steering-components">MOTOR VEHICLE & COMMERCIAL VEHICLES STEERING COMPONENTS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/hub-components">MOTOR VEHICLE HUB COMPONENTS</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/products/hvac-ducts">MOTOR & COMMERCIAL VEHICLE HVAC DUCTS ASDYSE FILTER ELEMENTS</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/products/iv-battery-cases">IV BATTERY CASES</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/products/water-management-fittings">HIGH PURITY WATER MANAGEMENT FITTINGS</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/products/hvac-ducts">MOTOR & COMMERCIAL VEHICLE HV DUCT ASSEMBLY FILTER ELEMENTS</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/products/iv-battery-cases">EV BATTERY CASES</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/products/water-management-fittings">HIGH PURITY WATER MANAGEMENT PLUMBING FITTINGS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/two-wheeler-parts">TWO WHEELER PARTS</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/capabilities" className={location.pathname === '/capabilities' ? 'active' : ''}>
