@@ -48,7 +48,7 @@ const AboutUs = () => {
           reduction projects, Imports replacements and its active CSR activities.
         </p>
         <p>
-          Magnum Wonderplast is an IATF-16949 certified Company based at
+          Magnum Wonderplast is an IATF-16949,MACE,MSME,IAF certified Company based at
           biggest industrial hub at FARIDABAD in Delhi NCR. We seek to produce
           quality products which are the integral part of various industrial
           products useful in our daily life. We have been a constant supplier to
