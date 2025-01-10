@@ -42,13 +42,13 @@ const AboutUs = () => {
         </p>
         <p>
           Magnum Wonderplast has got experience of working with big corporates like
-          HMC, KOYO, SANDEN, EMERSON, JTEKT, SONA & SYSTEMAIR and satisfying them
+          HMC, KOYO, SANDEN, EMERSON, JTEKT ,HONDA ,TOYOTA ,YAMAHA ,TATA ,SANTEC ETC. and satisfying them
           over the years. Presently, Magnum Wonderplast is known for its quality
           Injection & blow moulded products, problem solving techniques, Cost
           reduction projects, Imports replacements and its active CSR activities.
         </p>
         <p>
-          Magnum Wonderplast is an ISO 9001 & 14001 certified Company based at
+          Magnum Wonderplast is an IATF-16949 certified Company based at
           biggest industrial hub at FARIDABAD in Delhi NCR. We seek to produce
           quality products which are the integral part of various industrial
           products useful in our daily life. We have been a constant supplier to
