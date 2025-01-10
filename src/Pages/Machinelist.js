@@ -1,11 +1,11 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import './Machine.css'; // Add your custom CSS file for styling
 
 const Machines = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   const machinesData = [
     { id: 1, machineType: 'LATHE MACHINE', capacity: '6 FEET', make: 'GD' },
     { id: 2, machineType: 'LATHE MACHINE16', capacity: '4 FEET', make: 'GD' },
@@ -26,14 +26,75 @@ const Machines = () => {
     { id: 17, machineType: 'CRYSTA APEX V574', capacity: '500 x 700 x 400', make: 'MITUTOYO' },
   ];
 
+  const injectionMouldingData = [
+    { id: 1, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '35 TONNES', noOff: 1, make: 'TOYO' },
+    { id: 2, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '40 TONNES', noOff: 1, make: 'NISSEI' },
+    { id: 3, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '80 TONNES', noOff: 1, make: 'KRAUSS MASSEI' },
+    { id: 4, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '80 TONNES', noOff: 1, make: 'ENGEL' },
+    { id: 5, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '120 TONNES', noOff: 1, make: 'NISSEI' },
+    { id: 6, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '150 TONNES', noOff: 1, make: 'MITSUBISHI' },
+    { id: 7, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '150 TONNES', noOff: 1, make: 'ALL PLAS' },
+    { id: 8, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '150 TONNES', noOff: 1, make: 'CINCINNATI' },
+    { id: 9, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '150 TONNES', noOff: 1, make: 'HPM' },
+    { id: 10, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '250 TONNES', noOff: 1, make: 'VANDORN' },
+    { id: 11, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '250 TONNES', noOff: 2, make: 'TOSHIBA' },
+    { id: 12, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '500 TONNES', noOff: 1, make: 'VANDORN' },
+  ];
+
+  const verticalInsertMouldingData = [
+    { id: 1, description: 'VERTICLE INSERT INJECTION MOULDING MACHINE', capacity: '80 TONNES', noOff: 1, make: 'NISSEI' },
+    { id: 2, description: 'VERTICLE INSERT INJECTION MOULDING MACHINE - ROTARY', capacity: '100 TONNES', noOff: 1, make: 'HISHIYA-TIE BAR LESS' },
+    { id: 3, description: 'VERTICLE INSERT INJECTION MOULDING MACHINE - ROTARY', capacity: '100 TONNES', noOff: 1, make: 'NISSEI' },
+  ];
+
+  const blowMouldingData = [
+    { id: 1, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '1 LTR', noOff: 1, make: 'JAGMOHAN' },
+    { id: 2, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '3 LTR', noOff: 2, make: 'JAGMOHAN' },
+    { id: 3, description: 'FULLY AUTOMATIC BLOW MOULDING DOUBLE STATION M/c', capacity: '5 LTR', noOff: 2, make: 'JAGMOHAN' },
+    { id: 4, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '15 LTR', noOff: 1, make: 'JAGMOHAN' },
+    { id: 5, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '20 LTR', noOff: 2, make: 'JAGMOHAN' },
+    { id: 6, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '30 LTR', noOff: 2, make: 'JAGMOHAN' },
+    { id: 7, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '40 LTR', noOff: 2, make: 'JAGMOHAN' },
+    { id: 8, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '80 LTR', noOff: 2, make: 'JAGMOHAN' },
+    { id: 9, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '150 LTR', noOff: 1, make: 'JAGMOHAN' },
+  ];
+
+  const renderTable = (data, title) => (
+    <div className="machines-table">
+      <h3>{title}</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>S. No.</th>
+            <th>Description</th>
+            <th>Capacity / Specification</th>
+            <th>No. Off</th>
+            <th>Make</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item, index) => (
+            <tr key={item.id}>
+              <td>{index + 1}</td>
+              <td>{item.description}</td>
+              <td>{item.capacity}</td>
+              <td>{item.noOff}</td>
+              <td>{item.make}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+
   return (
     <section className="machining-capacity">
       <div className="container">
-        <h2 className="section-title">Our Machining Capacity and List of Machines</h2>
+        <h2 className="section-title">Tool-Room Machines</h2>
         <p className="section-description">
-          We are equipped with a wide range of high-performance machines, ensuring the highest precision and
-          quality for all your manufacturing needs. Below is a list of our advanced machinery and their capacities.
+          We are equipped with a wide range of high-performance machines, ensuring the highest precision and quality for all your manufacturing needs. Below is a list of our advanced machinery and their capacities.
         </p>
+
         <div className="machines-table">
           <table>
             <thead>
@@ -55,6 +116,19 @@ const Machines = () => {
               ))}
             </tbody>
           </table>
+        </div>
+        <br />
+
+        <div style={{ marginTop: '20px' }}>
+          {renderTable(injectionMouldingData, 'Injection Moulding Machines')}
+        </div>
+        <br />
+        <div style={{ marginTop: '20px' }}>
+          {renderTable(verticalInsertMouldingData, 'Vertical Insert Injection Moulding Machines')}
+        </div>
+        <br />
+        <div style={{ marginTop: '20px' }}>
+          {renderTable(blowMouldingData, 'Blow Moulding Machines')}
         </div>
       </div>
     </section>
