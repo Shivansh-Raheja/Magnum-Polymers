@@ -18,7 +18,7 @@ const Header = () => {
       <Container>
         <Navbar.Brand as={Link} to="/" className="logo">
           <img
-            src="/logo.png"
+            src="/logo-again.png"
             alt="Polymers Logo"
             className="animate__animated animate__fadeIn"
             style={{ width: '150px', height: 'auto' }}
