@@ -11,7 +11,7 @@ const trainingData = {
     description: 'P.O.R.S.E and Management Training aims to enhance leadership skills, project management capabilities, and strategic thinking.',
   },
   dojoRoom: {
-    images: ['/dojo1.jpeg', '/dojo2.jpeg', '/dojo3.jpeg','/dojo5.jpeg'],
+    images: ['/dojo1.jpeg', '/dojo2.png', '/dojo3.png','/dojo5.png','/dojo6.png'],
     description: 'The DOJO Room is designed to provide immersive, hands-on training experiences, focusing on practical skills development and team collaboration.',
   }
 };

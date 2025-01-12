@@ -58,6 +58,7 @@
     height: auto;
     border-radius: 20px;
     object-fit: cover;
+    max-height: 200px;
     transition: transform 0.3s ease, filter 0.3s ease;
   }
   

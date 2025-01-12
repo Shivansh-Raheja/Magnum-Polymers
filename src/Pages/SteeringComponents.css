@@ -1,0 +1,66 @@
+/* Page Container */
+.steering-components-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Image Banner */
+  .image-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 480px;
+  }
+  
+  /* Heading with Wave Animation */
+  .page-heading {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: #333;
+  }
+  
+  @keyframes wave-animation {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-wave {
+    animation: wave-animation 2s infinite;
+  }
+  
+  /* Components Grid */
+  .components-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .component-item img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .component-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .components-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .page-heading {
+      font-size: 2rem;
+    }
+  }
+  
