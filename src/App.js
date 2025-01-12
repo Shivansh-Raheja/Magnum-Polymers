@@ -23,6 +23,7 @@ import Pipes from './Pages/Pipe';
 import Hub from './Pages/Hub';
 import Duct from './Pages/Duct';
 import Ev from './Pages/Evcase';
+import Two from './Pages/Two';
 
 import './App.css'; // Ensure you have your styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -114,6 +115,10 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/products/ev-battery-cases" element={<Ev/>} />
+          {/* Add routes for other sections like About Us, Products, etc. */}
+        </Routes>
+        <Routes>
+          <Route path="/products/two-wheeler-parts" element={<Two/>} />
           {/* Add routes for other sections like About Us, Products, etc. */}
         </Routes>
         <Footer />
