@@ -67,7 +67,6 @@ const ClientsSection = () => {
           <h2>Our Prestigious Clients</h2>
           <p>We are proud to collaborate with some of the most esteemed companies worldwide.</p>
         </div>
-
         <div className="subheading">
           <h3>Brands directly served</h3>
         </div>
@@ -80,7 +79,7 @@ const ClientsSection = () => {
             ))}
           </Slider>
         </div>
-
+        <br /><br />
         <div className="subheading">
           <h3>Brands indirectly served</h3>
         </div>
