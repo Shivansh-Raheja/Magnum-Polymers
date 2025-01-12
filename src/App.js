@@ -19,6 +19,7 @@ import LogoAnimation from './Pages/LogoAnimation';
 import Events from './Pages/Events';
 import CarouselPage from './Pages/Carausel';
 import SteeringComponents from './Pages/Steering';
+import Pipes from './Pages/Pipe';
 
 import './App.css'; // Ensure you have your styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -94,6 +95,10 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/products/steering-components" element={<SteeringComponents />} />
+          {/* Add routes for other sections like About Us, Products, etc. */}
+        </Routes>
+        <Routes>
+          <Route path="products/water-management-fittings" element={<Pipes/>} />
           {/* Add routes for other sections like About Us, Products, etc. */}
         </Routes>
         <Footer />
