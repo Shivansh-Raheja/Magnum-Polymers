@@ -24,7 +24,7 @@ const plants = [
 const upcomingProject = {
   name: "Plant 4",
   image: "/plant4.png", // Replace with your upcoming project image
-  address: "Deeghot – Palwal, Haryana (INDIA), Plot Size : 6 Acres (Covered Area : 1 Lakhs Sq. Feet)",
+  address: "Deeghot – Palwal, Haryana (INDIA), Plot Size : 6.5 Acres (Covered Area : 1 Lakhs Sq. Feet)",
   disclaimer: "Please note that the image above is for illustrative purposes only. We do not own the rights to this image, and it is used here solely to represent the conceptualization of our upcoming project."
 };
 
