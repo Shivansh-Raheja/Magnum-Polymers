@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 
 const steeringComponents = [
   '/products/68.png',
-  '/products/65.png',
   '/products/64.png',
   '/products/63.png',
   '/products/62.png',
