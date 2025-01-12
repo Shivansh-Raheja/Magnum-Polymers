@@ -60,8 +60,8 @@ const PlantsPhotos = () => {
           <div className="upcoming-info">
             <h3>{upcomingProject.name}</h3>
             <p><b>Address-: </b>{upcomingProject.address}</p>
-            <p className="disclaimer"><b>Disclaimer-: </b>{upcomingProject.disclaimer}</p>
           </div>
+          <p className="disclaimer"><b>Disclaimer-: </b>{upcomingProject.disclaimer}</p>
         </div>
       </div>
     </div>

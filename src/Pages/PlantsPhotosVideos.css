@@ -12,7 +12,6 @@
   color: #222;
   margin-bottom: 40px;
   font-weight: bold;
-  
 }
 
 /* Gallery for the plants */
@@ -128,10 +127,14 @@
   color: #555;
 }
 
+/* Disclaimer Section Styling */
 .disclaimer {
-  font-size: 0.9rem;
-  color: #888;
-  margin-top: 15px;
+  font-size: 0.8rem; /* Smaller font size for less visibility */
+  color: #777; /* Lighter color to make it less prominent */
+  margin-top: 10px; /* Add some space above */
+  text-align: left; /* Align to the left */
+  max-width: 80%; /* Ensure the text doesn't stretch too wide */
+  margin: 0 auto; /* Center the text */
 }
 
 /* Responsive Styles for Mobile Screens */
@@ -176,7 +179,9 @@
   }
 
   .disclaimer {
-    font-size: 0.85rem;
+    font-size: 0.75rem; /* Reduce font size further on mobile */
+    color: #888; /* Lighten the color for better contrast */
+    margin-top: 15px; /* Add a bit more space */
   }
 }
 
@@ -221,6 +226,7 @@
   }
 
   .disclaimer {
-    font-size: 0.8rem;
+    font-size: 0.7rem; /* Smaller font size for very small screens */
+    color: #888; /* Keep the lighter color */
   }
 }
