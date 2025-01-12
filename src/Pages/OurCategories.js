@@ -38,8 +38,8 @@ const OurCategories = () => {
       <div className="product-gridd">
         <Link to="/products" className="product-tiles">
           <img
-            src="/pexels-cottonbro-5532664.jpg"
-            data-src="/pexels-cottonbro-5532664.jpg"
+            src="/insert.png"
+            data-src="/insert.png"
             alt="Blow Moulding"
             className="lazyload"
           />
@@ -48,8 +48,8 @@ const OurCategories = () => {
 
         <Link to="/products" className="product-tiles">
           <img
-            src="/pexels-willianmatiola-29942606.jpg"
-            data-src="/pexels-willianmatiola-29942606.jpg"
+            src="/blow.png"
+            data-src="/blow.png"
             alt="Injection & Insert Moulding"
             className="lazyload"
           />
@@ -58,8 +58,8 @@ const OurCategories = () => {
 
         <Link to="/products" className="product-tiles">
           <img
-            src="/pexels-pixabay-236698.jpg"
-            data-src="/pexels-pixabay-236698.jpg"
+            src="/spm.png"
+            data-src="/spm.png"
             alt="Inhouse Tooling & SPM"
             className="lazyload"
           />

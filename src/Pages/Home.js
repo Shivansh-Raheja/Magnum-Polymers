@@ -7,6 +7,7 @@ import ClientsSection from './Clients';
 import OurService from './Services';
 import AboutUs from './Aboutus';
 import OurCategories from './OurCategories';
+import OurProducts from './Ourproduct';
 
 const HomePage = () => {
   useEffect(() => {
@@ -174,12 +175,12 @@ const HomePage = () => {
   </div>
 </section>
 
-<section
+{/* <section
       className={`our-products ${isVisibleProducts ? 'visible' : ''}`}
       ref={productsSectionRef}
     >
       <div className="our-products-container">
-        {/* Left Side: Text and Animated Man */}
+
         <div className="left-side">
           <div className="intro-text">
             <h2 style={{fontWeight:"bold"}}>Our Products</h2>
@@ -195,7 +196,6 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Right Side: Product Grid */}
         <div className="right-side">
           <div className="product-grid">
             {products.map((product, index) => (
@@ -211,7 +211,6 @@ const HomePage = () => {
             ))}
           </div>
 
-          {/* Call-to-Action Button */}
                   <div className="cta-container">
           <Link to="/products">
             <button className="cta-button">See All Products</button>
@@ -220,7 +219,10 @@ const HomePage = () => {
 
         </div>
       </div>
-    </section>
+    </section> */}
+
+    <OurProducts />
+
 
     <ClientsSection />
     {/* <OurService /> */}
