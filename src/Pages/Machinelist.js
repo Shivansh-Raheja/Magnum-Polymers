@@ -23,7 +23,7 @@ const Machines = () => {
     { id: 14, machineType: 'EDM', capacity: '850X590X370', make: 'PHILIPS' },
     { id: 15, machineType: 'VERTICAL MACHINING CENTRE (VMC) * 2 NOS', capacity: 'VF2', make: 'HAAS' },
     { id: 16, machineType: 'EDM (PZE 400)', capacity: '980x570x400', make: 'PHILIPS' },
-    { id: 17, machineType: 'CRYSTA APEX V574', capacity: '500 x 700 x 400', make: 'MITUTOYO' },
+    { id: 17, machineType: 'VMM CRYSTA APEX V574', capacity: '500 x 700 x 400', make: 'MITUTOYO' },
   ];
 
   const injectionMouldingData = [
@@ -42,9 +42,9 @@ const Machines = () => {
   ];
 
   const verticalInsertMouldingData = [
-    { id: 1, description: 'VERTICLE INSERT INJECTION MOULDING MACHINE', capacity: '80 TONNES', noOff: 1, make: 'NISSEI' },
-    { id: 2, description: 'VERTICLE INSERT INJECTION MOULDING MACHINE - ROTARY', capacity: '100 TONNES', noOff: 1, make: 'HISHIYA-TIE BAR LESS' },
-    { id: 3, description: 'VERTICLE INSERT INJECTION MOULDING MACHINE - ROTARY', capacity: '100 TONNES', noOff: 1, make: 'NISSEI' },
+    { id: 1, description: 'VERTICAL INSERT INJECTION MOULDING MACHINE', capacity: '80 TONNES', noOff: 1, make: 'NISSEI' },
+    { id: 2, description: 'VERTICAL INSERT INJECTION MOULDING MACHINE - ROTARY', capacity: '100 TONNES', noOff: 1, make: 'HISHIYA-TIE BAR LESS' },
+    { id: 3, description: 'VERTICAL INSERT INJECTION MOULDING MACHINE - ROTARY', capacity: '100 TONNES', noOff: 1, make: 'NISSEI' },
   ];
 
   const blowMouldingData = [

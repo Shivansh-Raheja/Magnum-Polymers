@@ -17,6 +17,7 @@ import Training from './Pages/Training';
 import HealthSafety from './Pages/Health';
 import LogoAnimation from './Pages/LogoAnimation';
 import Events from './Pages/Events';
+import CarouselPage from './Pages/Carausel';
 
 import './App.css'; // Ensure you have your styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -80,6 +81,10 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/good-manufacturing-practices/events" element={<Events />} />
+          {/* Add routes for other sections like About Us, Products, etc. */}
+        </Routes>
+        <Routes>
+          <Route path="/carausel" element={<CarouselPage />} />
           {/* Add routes for other sections like About Us, Products, etc. */}
         </Routes>
         <Routes>

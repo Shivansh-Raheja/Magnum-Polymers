@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./OurMachiningCapacity.css";
-import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { Link } from "react-router-dom";
 
 const machines = [
     { 
@@ -18,7 +16,8 @@ const machines = [
       { 
         name: "Tool-Room", 
         image: "/toolroom.jpg", 
-        description: "Tool-Room involves designing and manufacturing custom tools and dies used in various machining processes. This capability ensures full control over quality and turnaround time. We specialize in creating precise tools tailored to customer specifications. It reduces lead times and enhances production efficiency. It allows for better customization and cost management in manufacturing. This approach minimizes dependency on external vendors and ensures rapid prototyping. The flexibility of in-house tooling supports innovation and process optimization. It plays a vital role in maintaining stringent quality standards."
+        description: "Tool-Room involves designing and manufacturing custom tools and dies used in various machining processes. This capability ensures full control over quality and turnaround time. We specialize in creating precise tools tailored to customer specifications. It reduces lead times and enhances production efficiency. It allows for better customization and cost management in manufacturing. This approach minimizes dependency on external vendors and ensures rapid prototyping. The flexibility of in-house tooling supports innovation and process optimization. It plays a vital role in maintaining stringent quality standards.",
+        link:"/carausel"
       },
       { 
         name: "Insert Moulding - [20 - 120 TONNES]", 
@@ -47,15 +46,6 @@ const machines = [
       }
 ];
 
-const additionalMachines = [
-  { name: "HAAS VMC : VF2", image: "/machine1.png" },
-  { name: "PHILIPS EDM : PZE 400", image: "/machine2.png" },
-  { name: "VMC : VM 700", image: "/machine3.jpg" },
-  { name: "PRECICUT VERTICAL MILLING MACHINE ", image: "/machine4.jpg" },
-  { name: "PHILIPS WIRECUT", image: "/machine5.png" },
-  { name: "PHILIPS EDM DRIL", image: "/machine6.jpg" }
-];
-
 const OurMachiningCapacity = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -80,31 +70,6 @@ const OurMachiningCapacity = () => {
       return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const carouselSettings = {
-      dots: false,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      arrows:false,
-      autoplay: true,
-      autoplaySpeed: 600,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-          }
-        }
-      ]
-    };
-  
-  
     return (
       <div className="machining-container">
         <h1 style={{ fontWeight: "bold" }}>Our Manufacturing Capabilities</h1>
@@ -122,22 +87,15 @@ const OurMachiningCapacity = () => {
               <div className="machining-text">
                 <h2>{machine.name}</h2>
                 <p>{machine.description}</p>
+                {machine.link && (
+                <Link to={machine.link} className="machining-link">
+                  Learn More
+                </Link>
+              )}
               </div>
             </div>
           </div>
         ))}
-
-<h2 className="carousel-title">Explore More</h2>
-      <Slider {...carouselSettings} className="machining-carousel">
-        {additionalMachines.map((machine, index) => (
-          <div key={index} className="carousel-item">
-            <div className="carousel-image">
-              <img src={machine.image} alt={machine.name} />
-            </div>
-            <h3>{machine.name}</h3>
-          </div>
-        ))}
-      </Slider>
       </div>
     );
   };
