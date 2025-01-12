@@ -46,7 +46,7 @@ const Header = () => {
               <NavDropdown.Item as={Link} to="/about-us/awards-recognition">AWARDS AND RECOGNITION</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="PRODUCTS" id="products-dropdown" className={location.pathname.startsWith('/products') ? 'active' : ''}>
-              <NavDropdown.Item as={Link} to="/products">VIEW ALL PRODUCTS</NavDropdown.Item>
+              {/* <NavDropdown.Item as={Link} to="/products">VIEW ALL PRODUCTS</NavDropdown.Item> */}
               <NavDropdown.Item as={Link} to="/products/steering-components">MOTOR VEHICLE & COMMERCIAL VEHICLES STEERING COMPONENTS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/hub-components">MOTOR VEHICLE HUB COMPONENTS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/hvac-ducts">MOTOR & COMMERCIAL VEHICLE HV DUCT ASSEMBLY FILTER ELEMENTS</NavDropdown.Item>

@@ -48,8 +48,7 @@ const AboutUs = () => {
           reduction projects, Imports replacements and its active CSR activities.
         </p>
         <p>
-          Magnum Wonderplast is an IATF-16949,MACE,MSME,IAF certified Company based at
-          biggest industrial hub at FARIDABAD in Delhi NCR. We seek to produce
+          Magnum Wonderplast is an IATF-16949, MACE, MSME, IAF certified Company having four plants in sector 59, FARIDABAD,which is an industrial hub in Delhi NCR. We seek to produce
           quality products which are the integral part of various industrial
           products useful in our daily life. We have been a constant supplier to
           various industries like automobile, consumer durables, Power
@@ -58,8 +57,8 @@ const AboutUs = () => {
       </div>
       <div className="image-container">
         <img
-          src="/about-us.jpg"
-          data-src="/about-us.jpg"
+          src="/about-us.jpeg"
+          data-src="/about-us.jpeg"
           alt="About Us"
           className={`lazyload ${isVisible ? 'loaded' : ''}`}
           width="500"

@@ -12,8 +12,8 @@ const Footer = () => {
           <ul className="footer-list">
             <li><FaWhatsapp /> +91-98110 61756</li>
             <li><FaWhatsapp /> +91 93184 93058</li>
-            <li><FaEnvelope /> magnumpolymers@gmail.com</li>
-            <li><FaMapMarkerAlt /> Plot No:14,25,30 Sector-59,</li>
+            <li><FaEnvelope /> Inquiry@magnumwonderplast.com</li>
+            <li><FaMapMarkerAlt /> Plot No:14,19,25,30 Sector-59,</li>
             <li>Ind Estate, Faridabad 121004,</li>
             <li>Haryana, India</li>
             <li className="social-links">
@@ -57,8 +57,8 @@ const Footer = () => {
             <li>
               <img src="/canada.png" alt="Canada Flag" className="footer-flag" />
               <div>Canada</div>
-              <div>Ritwik Trehan</div>
-              <div><a href="mailto:ritwiktrehan@magnumwonderplast.com">ritwiktrehan@magnumwonderplast.com</a></div>
+              <div>Rithwik Trehan</div>
+              <div><a href="mailto:ritwiktrehan@magnumwonderplast.com">rithwiktrehan@magnumwonderplast.com</a></div>
               <div>+1 (647) 649-8826</div>
             </li>
             <li>
