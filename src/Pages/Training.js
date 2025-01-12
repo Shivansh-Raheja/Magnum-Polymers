@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Training.css';
-import { useEffect } from 'react';
 
 const trainingData = {
   healthAwareness: {
@@ -10,13 +9,18 @@ const trainingData = {
   managementTraining: {
     images: ['/management1.jpeg', '/management2.jpeg', '/management3.jpeg', '/management4.jpeg', '/management5.jpeg', '/management6.jpeg'],
     description: 'P.O.R.S.E and Management Training aims to enhance leadership skills, project management capabilities, and strategic thinking.',
+  },
+  dojoRoom: {
+    images: ['/dojo1.jpeg', '/dojo2.jpeg', '/dojo3.jpeg','/dojo5.jpeg'],
+    description: 'The DOJO Room is designed to provide immersive, hands-on training experiences, focusing on practical skills development and team collaboration.',
   }
 };
 
 const Training = () => {
-    useEffect(() => {
-            window.scrollTo(0, 0);
-          }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [selectedTraining, setSelectedTraining] = useState('healthAwareness');
 
   const handleTrainingChange = (type) => {
@@ -41,6 +45,12 @@ const Training = () => {
         >
           P.O.R.S.E and Management Training
         </button>
+        <button
+          className={`training-button ${selectedTraining === 'dojoRoom' ? 'active' : ''}`}
+          onClick={() => handleTrainingChange('dojoRoom')}
+        >
+          DOJO Room
+        </button>
       </div>
 
       <div className="training-gallery">
@@ -50,7 +60,7 @@ const Training = () => {
           </div>
         ))}
       </div>
-      
+
       <p className="training-description">{description}</p>
     </div>
   );
