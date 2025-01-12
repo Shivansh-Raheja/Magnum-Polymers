@@ -9,7 +9,10 @@ const awardsData = [
   { id: 4, imgSrc: '/award4.jpg', title: 'Recognition from JTEKT for Quality 2014' },
   { id: 5, imgSrc: '/award5.jpg', title: 'Recognition from JTEKTfor Delivery 2018-19' },
   { id: 6, imgSrc: '/award6.jpg', title: 'Recognition from JTEKT for Indigenization 2017-18' },
-  { id: 7, imgSrc: '/award7.jpg', title: 'Recognition from SONA for Cost Competence' }
+  { id: 7, imgSrc: '/award7.jpg', title: 'Recognition from SONA for Cost Competence' },
+  { id: 8, imgSrc: '/IFBB.jpg', title: 'Recognition from IFB Connect' },
+  { id: 9, imgSrc: '/global.jpg', title: 'Participation in the Global Summit 2012' },
+  { id: 10, imgSrc: '/mace.jpg', title: 'Recognition from MACE for Green Vendor' }
 ];
 
 const AwardsRecognition = () => {

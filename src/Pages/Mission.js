@@ -45,7 +45,7 @@ const MissionVision = () => {
           <div className="mission-vision-text">
             <h2>Our Vision</h2>
             <p>
-            At Magnum Polymers our vision is to drive innovation and excellence through our precision engineering and creative solutions. We aim to revolutionize industries by providing top-tier, customized plastic molding solutions that cater to diverse needs and challenges.
+            At Magnum-Wonderplast our vision is to drive innovation and excellence through our precision engineering and creative solutions. We aim to revolutionize industries by providing top-tier, customized plastic molding solutions that cater to diverse needs and challenges.
 
             </p>
             <p>
@@ -68,7 +68,7 @@ const MissionVision = () => {
           <div className="mission-vision-text">
             <h2>Our Goal</h2>
             <p>
-  Our goal is to be among the top 10 automotive components providers in the industry. We are committed to delivering high-quality, innovative products that not only meet but exceed customer expectations. Through continuous improvement, we strive to enhance our manufacturing processes, ensuring efficiency and precision at every step.
+  Our goal is to be among the top 10 automotive components and solutions providers in the industry. We are committed to delivering high-quality, innovative products that not only meet but exceed customer expectations. Through continuous improvement, we strive to enhance our manufacturing processes, ensuring efficiency and precision at every step.
 </p>
 <p>
   By fostering a culture of excellence and engaging our skilled workforce, we aim to drive sustainable growth and solidify our position as a trusted partner in the automotive sector. Our dedication to quality, customer satisfaction, and technological advancement propels us towards achieving industry leadership and long-term success.
