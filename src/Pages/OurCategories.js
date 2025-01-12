@@ -36,7 +36,7 @@ const OurCategories = () => {
     >
       <h2>Our Categories</h2>
       <div className="product-gridd">
-        <Link to="/products" className="product-tiles">
+        <Link to="/products/steering-components" className="product-tiles">
           <img
             src="/insert.png"
             data-src="/insert.png"
@@ -46,7 +46,7 @@ const OurCategories = () => {
           <div className="category-label">Injection & Insert Moulding</div>
         </Link>
 
-        <Link to="/products" className="product-tiles">
+        <Link to="/products/steering-components" className="product-tiles">
           <img
             src="/blow.png"
             data-src="/blow.png"
@@ -56,7 +56,7 @@ const OurCategories = () => {
           <div className="category-label">Blow Moulding</div>
         </Link>
 
-        <Link to="/products" className="product-tiles">
+        <Link to="/products/steering-components" className="product-tiles">
           <img
             src="/spm.png"
             data-src="/spm.png"

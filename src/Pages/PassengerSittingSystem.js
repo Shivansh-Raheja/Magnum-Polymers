@@ -1,7 +1,11 @@
 import React from 'react';
 import './PassengerSittingSystem.css';
+import { useEffect } from 'react';
 
 const PassengerSittingSystem = () => {
+  useEffect(() => {
+          window.scrollTo(0, 0);
+        }, []);
   return (
     <div className="passenger-sitting-system-container">
       {/* Bus Image Banner */}
