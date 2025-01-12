@@ -6,7 +6,7 @@
   }
   
   /* Image Banner */
-  .image-banner img {
+  .image-bannerr img {
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
   }
   
   /* Heading */
-  .page-heading {
+  .page-headingg {
     margin: 370px 0 20px 0;
     font-size: 3rem;
     font-weight: bold;
@@ -37,7 +37,7 @@
   }
   
   /* Make the heading "pop" with a subtle hover effect */
-  .page-heading:hover {
+  .page-headingg:hover {
     background-color: rgba(66, 64, 64, 0.9);
     transform: translateY(-5px);
   }
@@ -94,7 +94,7 @@
   }
   
   @media (max-width: 768px) {
-    .page-heading {
+    .page-headingg {
       font-size: 2.2rem;
       padding-left: 10px;
     }

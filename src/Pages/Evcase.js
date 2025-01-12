@@ -17,12 +17,12 @@ const Ev = () => {
   return (
     <div className="steering-components-page">
       {/* Image Banner */}
-      <div className="image-banner">
+      <div className="image-bannerr">
         <img src="/hub/bat.png" alt="Steering Components Banner" />
       </div>
 
       {/* Heading with Wave Animation */}
-      <h1 className="page-heading animate-wave">
+      <h1 className="page-headingg animate-wave">
       EV BATTERY CASES
       </h1>
 
