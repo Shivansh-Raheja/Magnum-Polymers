@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -27,36 +27,43 @@ const carouselSettings = {
   ]
 };
 
-const CarouselPage = () => (
-  <div className="carousel-container">
-    <section className="tool-design-section">
-      <div className="tool-design-left">
-        <h1 className="tool-design-heading">Tool Design Capabilities</h1>
-        <ul>
-          <li>1-PLATE MOULD</li>
-          <li>2-PLATE MOULD</li>
-          <li>3- HOT RUNNER MOULD</li>
-          <li>4- UNSCREWING MOULD</li>
-          <li>5 -MOULDS WITH MULTIPLE LIFTERS & SIDE CORES</li>
-        </ul>
-      </div>
-      <div className="tool-design-right">
-        <img src="/col.png" alt="Tool Design" className="collage-image" />
-      </div>
-    </section>
+const CarouselPage = () => {
+  // useEffect hook should be inside the component function
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    <h2 className="carousel-title">List of Tool-Room Machines</h2>
-    <Slider {...carouselSettings}>
-      {additionalMachines.map((machine, index) => (
-        <div key={index} className="carousel-item">
-          <div className="carousel-image">
-            <img src={machine.image} alt={machine.name} />
-          </div>
-          <h3>{machine.name}</h3>
+  return (
+    <div className="carousel-container">
+      <section className="tool-design-section">
+        <div className="tool-design-left">
+          <h1 className="tool-design-heading">Tool Design Capabilities</h1>
+          <ul>
+            <li>1-PLATE MOULD</li>
+            <li>2-PLATE MOULD</li>
+            <li>3- HOT RUNNER MOULD</li>
+            <li>4- UNSCREWING MOULD</li>
+            <li>5 -MOULDS WITH MULTIPLE LIFTERS & SIDE CORES</li>
+          </ul>
         </div>
-      ))}
-    </Slider>
-  </div>
-);
+        <div className="tool-design-right">
+          <img src="/col.png" alt="Tool Design" className="collage-image" />
+        </div>
+      </section>
+
+      <h2 className="carousel-title">List of Tool-Room Machines</h2>
+      <Slider {...carouselSettings}>
+        {additionalMachines.map((machine, index) => (
+          <div key={index} className="carousel-item">
+            <div className="carousel-image">
+              <img src={machine.image} alt={machine.name} />
+            </div>
+            <h3>{machine.name}</h3>
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
+};
 
 export default CarouselPage;
