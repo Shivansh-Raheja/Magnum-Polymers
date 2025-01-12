@@ -50,7 +50,7 @@ const Header = () => {
               <NavDropdown.Item as={Link} to="/products/steering-components">MOTOR VEHICLE & COMMERCIAL VEHICLES STEERING COMPONENTS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/hub-components">MOTOR VEHICLE HUB COMPONENTS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/hvac-ducts">MOTOR & COMMERCIAL VEHICLE HV DUCT ASSEMBLY FILTER ELEMENTS</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/products/iv-battery-cases">EV BATTERY CASES</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/products/ev-battery-cases">EV BATTERY CASES</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/water-management-fittings">HIGH PURITY WATER MANAGEMENT PLUMBING FITTINGS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/two-wheeler-parts">TWO WHEELER PARTS</NavDropdown.Item>
             </NavDropdown>
