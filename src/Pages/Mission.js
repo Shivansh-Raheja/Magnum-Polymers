@@ -45,7 +45,7 @@ const MissionVision = () => {
           <div className="mission-vision-text">
             <h2>Our Vision</h2>
             <p>
-            At Magnum-Wonderplast our vision is to drive innovation and excellence through our precision engineering and creative solutions. We aim to revolutionize industries by providing top-tier, customized plastic molding solutions that cater to diverse needs and challenges.
+            At Magnum Wonderplast our vision is to drive innovation and excellence through our precision engineering and creative solutions. We aim to revolutionize industries by providing top-tier, customized plastic molding solutions that cater to diverse needs and challenges.
 
             </p>
             <p>

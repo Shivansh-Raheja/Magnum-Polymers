@@ -53,10 +53,11 @@ const AboutPage = () => {
           {/* Right: Text Content */}
           <div className="about-text">
             <p>
-            Magnum Wonderplast (P) ltd is a leading name in the Automotive IC+EV components Industry worldwide  delivering highly critical components for Steering Assy, 3rd Generation wheel Hub assys , HVAC assys for Commercial vehicles,Passenger vehicles,Two wheelers, Bicycles. With decades of expertise, state-of-the-art
-              infrastructure, and a dedicated team, we have consistently set
-              benchmarks in quality, reliability, and customer satisfaction.
+            Magnum Wonderplast (P) ltd is a leading name in the Automotive IC+EV components Industry worldwide  delivering highly critical components for Steering Assy, 3rd Generation wheel Hub assys , HVAC assys for Commercial vehicles,Passenger vehicles,Two wheeler and Bicycles. 
             </p>
+            <p>With decades of expertise, state-of-the-art
+              infrastructure, and a dedicated team, we have consistently set
+              benchmarks in quality, reliability, and customer satisfaction.</p>
             <p>
               Our core values include innovation, sustainability, and
               excellence, driving us to create products that meet the highest
@@ -152,7 +153,7 @@ const AboutPage = () => {
     </div>
 </section>
 
-<section class="vision-section">
+{/* <section class="vision-section">
   <div class="vision-container">
     <div class="vision-left">
       <h2 class="vision-title">Our Vision</h2>
@@ -186,9 +187,9 @@ const AboutPage = () => {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
-<Future />
+{/* <Future /> */}
 
     </div>
   );

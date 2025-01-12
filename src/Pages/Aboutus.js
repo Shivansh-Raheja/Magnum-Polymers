@@ -36,24 +36,25 @@ const AboutUs = () => {
       <div className="content">
         <h2>About Us</h2>
         <p>
-          Magnum Wonderplast, was established in the year 1991 by Mr. Rajeev Trehan,
+          Magnum Wonderplast, was established in the year 1995 by Mr. Rajiv Trehan,
           qualified Plastics Technologist who is also presently the Managing
           Director of the company.
         </p>
         <p>
-          Magnum Wonderplast has got experience of working with big corporates like
-          HMC, KOYO, SANDEN, EMERSON, JTEKT ,HONDA ,TOYOTA ,YAMAHA ,TATA ,SANTEC ETC. and satisfying them
+          Magnum Wonderplast has experience of working with big corporates like
+          HMC, KOYO, SANDEN, JTEKT ,HONDA ,TOYOTA ,YAMAHA ,TATA ,SANTEC ETC. and satisfying them
           over the years. Presently, Magnum Wonderplast is known for its quality
           Injection & blow moulded products, problem solving techniques, Cost
           reduction projects, Imports replacements and its active CSR activities.
         </p>
         <p>
-          Magnum Wonderplast is an IATF-16949, MACE, MSME, IAF certified Company having four plants in sector 59, FARIDABAD,which is an industrial hub in Delhi NCR. We seek to produce
-          quality products which are the integral part of various industrial
-          products useful in our daily life. We have been a constant supplier to
-          various industries like automobile, consumer durables, Power
-          generation, Toys etc.
+          Magnum Wonderplast is an IATF-16949, MACE GREEN , MSME ZED GOLD , ISO 14001 certified Company having four plants in sector 59, FARIDABAD,which is an industrial hub in Delhi NCR. 
         </p>
+        <p>MAGNUM
+          quality products which are the integral part of various industrial
+          products useful in our daily life. Magnum is original equipment supplier to
+          various industries like automobile, consumer durables, Power
+          generation, Toys etc.</p>
       </div>
       <div className="image-container">
         <img

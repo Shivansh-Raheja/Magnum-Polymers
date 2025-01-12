@@ -38,8 +38,8 @@ const OurCategories = () => {
       <div className="product-gridd">
         <Link to="/products/steering-components" className="product-tiles">
           <img
-            src="/insert.png"
-            data-src="/insert.png"
+            src="/insert.jpg"
+            data-src="/insert.jpg"
             alt="Blow Moulding"
             className="lazyload"
           />
@@ -48,8 +48,8 @@ const OurCategories = () => {
 
         <Link to="/products/steering-components" className="product-tiles">
           <img
-            src="/blow.png"
-            data-src="/blow.png"
+            src="/blowm.png"
+            data-src="/blowm.png"
             alt="Injection & Insert Moulding"
             className="lazyload"
           />

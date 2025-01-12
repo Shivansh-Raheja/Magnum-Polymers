@@ -32,7 +32,6 @@ const HomePage = () => {
   ];
 
   const galleryVideos = [
-    { src: '/1.mp4', alt: 'Work Video 1' },
     { src: '/2.mp4', alt: 'Work Video 2' },
     { src: '/3.mp4', alt: 'Work Video 3' },
     { src: '/4.mp4', alt: 'Work Video 4' },

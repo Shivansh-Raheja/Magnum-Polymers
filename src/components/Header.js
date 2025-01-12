@@ -53,7 +53,7 @@ const Header = () => {
               <NavDropdown.Item as={Link} to="/products/ev-battery-cases">EV BATTERY CASES</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/water-management-fittings">HIGH PURITY WATER MANAGEMENT PLUMBING FITTINGS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/products/two-wheeler-parts">TWO WHEELER PARTS</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/products/passenger-sitting-system">PASSENGER SITTING SYSTEM</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/products/passenger-sitting-system">PASSENGER SEATING SYSTEM</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/capabilities" className={location.pathname === '/capabilities' ? 'active' : ''}>
               CAPABILITIES

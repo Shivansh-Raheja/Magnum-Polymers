@@ -29,22 +29,22 @@ const Machines = () => {
   const injectionMouldingData = [
     { id: 1, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '35 TONNES', noOff: 1, make: 'TOYO' },
     { id: 2, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '40 TONNES', noOff: 1, make: 'NISSEI' },
-    { id: 3, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '80 TONNES', noOff: 1, make: 'KRAUSS MASSEI' },
+    { id: 3, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '80 TONNES', noOff: 1, make: 'BATTENFELD' },
     { id: 4, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '80 TONNES', noOff: 1, make: 'ENGEL' },
     { id: 5, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '120 TONNES', noOff: 1, make: 'NISSEI' },
     { id: 6, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '150 TONNES', noOff: 1, make: 'MITSUBISHI' },
-    { id: 7, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '150 TONNES', noOff: 1, make: 'ALL PLAS' },
-    { id: 8, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '150 TONNES', noOff: 1, make: 'CINCINNATI' },
+    { id: 7, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '150 TONNES', noOff: 1, make: 'BATTENFELD' },
+    { id: 8, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '180 TONNES', noOff: 1, make: 'BATTENFELD' },
     { id: 9, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '150 TONNES', noOff: 1, make: 'HPM' },
-    { id: 10, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '250 TONNES', noOff: 1, make: 'VANDORN' },
-    { id: 11, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '250 TONNES', noOff: 2, make: 'TOSHIBA' },
-    { id: 12, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '500 TONNES', noOff: 1, make: 'VANDORN' },
+    { id: 10, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '250 TONNES', noOff: 1, make: 'HPM' },
+    { id: 11, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '350 TONNES', noOff: 2, make: 'HPM' },
+    { id: 12, description: 'FULLY AUTOMATIC INJECTION MOULDING M/c', capacity: '500 TONNES', noOff: 1, make: 'CINCINATTI' },
   ];
 
   const verticalInsertMouldingData = [
-    { id: 1, description: 'VERTICAL INSERT INJECTION MOULDING MACHINE', capacity: '80 TONNES', noOff: 1, make: 'NISSEI' },
+    { id: 1, description: 'VERTICAL INSERT INJECTION MOULDING MACHINE', capacity: '60 TONNES', noOff: 3, make: 'NISSEI' },
     { id: 2, description: 'VERTICAL INSERT INJECTION MOULDING MACHINE - ROTARY', capacity: '100 TONNES', noOff: 1, make: 'HISHIYA-TIE BAR LESS' },
-    { id: 3, description: 'VERTICAL INSERT INJECTION MOULDING MACHINE - ROTARY', capacity: '100 TONNES', noOff: 1, make: 'NISSEI' },
+    { id: 3, description: 'VERTICAL INSERT INJECTION MOULDING MACHINE - ROTARY', capacity: '120 TONNES', noOff: 1, make: 'NISSEI' },
   ];
 
   const blowMouldingData = [
@@ -52,11 +52,10 @@ const Machines = () => {
     { id: 2, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '3 LTR', noOff: 2, make: 'JAGMOHAN' },
     { id: 3, description: 'FULLY AUTOMATIC BLOW MOULDING DOUBLE STATION M/c', capacity: '5 LTR', noOff: 2, make: 'JAGMOHAN' },
     { id: 4, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '15 LTR', noOff: 1, make: 'JAGMOHAN' },
-    { id: 5, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '20 LTR', noOff: 2, make: 'JAGMOHAN' },
-    { id: 6, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '30 LTR', noOff: 2, make: 'JAGMOHAN' },
-    { id: 7, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '40 LTR', noOff: 2, make: 'JAGMOHAN' },
-    { id: 8, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '80 LTR', noOff: 2, make: 'JAGMOHAN' },
-    { id: 9, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '150 LTR', noOff: 1, make: 'JAGMOHAN' },
+    { id: 5, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '20 LTR', noOff: 1, make: 'JAGMOHAN' },
+    { id: 6, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '40 LTR', noOff: 2, make: 'JAGMOHAN' },
+    { id: 7, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '80 LTR', noOff: 1, make: 'JAGMOHAN' },
+    { id: 8, description: 'FULLY AUTOMATIC BLOW MOULDING M/c', capacity: '150 LTR', noOff: 2, make: 'JAGMOHAN' },
   ];
 
   const renderTable = (data, title) => (

@@ -19,7 +19,7 @@ const PassengerSittingSystem = () => {
 
       {/* Heading */}
       <div className="section-heading">
-        <h1>Passenger Sitting System</h1>
+        <h1>Passenger Seating System</h1>
       </div>
 
       {/* Chair Image and Details */}
@@ -32,7 +32,7 @@ const PassengerSittingSystem = () => {
           />
         </div>
         <div className="chair-description-container">
-          <h2>BLOW MOULDED CHAIRS</h2>
+          <h2>BLOW MOULDED SEATING SYSTEM FOR BUS</h2>
           <p>
             Our comfortable passenger sitting system is designed to offer a
             superior level of comfort, durability, and safety. The ergonomic
