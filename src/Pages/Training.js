@@ -43,7 +43,7 @@ const Training = () => {
           className={`training-button ${selectedTraining === 'managementTraining' ? 'active' : ''}`}
           onClick={() => handleTrainingChange('managementTraining')}
         >
-          P.O.R.S.E and Management Training
+          P.O.S.H and Management Training
         </button>
         <button
           className={`training-button ${selectedTraining === 'dojoRoom' ? 'active' : ''}`}
