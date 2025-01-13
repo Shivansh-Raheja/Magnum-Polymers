@@ -34,43 +34,28 @@ const AboutPage = () => {
     <div className="about-page">
       {/* About Us Section */}
       <section className="about-us-section">
-        <h1 className="about-title">About Us</h1>
-        <div className="about-content">
-          {/* Left: Video */}
-          <div className="about-video-container">
-            <video
-              className="about-video"
-              src="/Mango AI Work_20250108-000633.mp4" // Replace with your video source
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              Your browser does not support the video tag.
-            </video>
-          </div>
+  <h1 className="about-title">About Us</h1>
+  <div className="about-content">
+    {/* Left: Image */}
+    <div className="about-image-container">
+      <img
+        className="about-image"
+        src="https://magnumpolymers.com/wp-content/uploads/2022/06/industrial-injection-molding-press-machine-manufacture-conditioner-parts-using-polymers-1-min.jpg" // Replace with your image source
+        alt="About Us Image"
+      />
+    </div>
 
-          {/* Right: Text Content */}
-          <div className="about-text">
-            <p>
-            Magnum Wonderplast (P) ltd is a leading name in the Automotive IC+EV components Industry worldwide  delivering highly critical components for Steering Assy, 3rd Generation wheel Hub assys , HVAC assys for Commercial vehicles,Passenger vehicles,Two wheeler and Bicycles. 
-            </p>
-            <p>With decades of expertise, state-of-the-art
-              infrastructure, and a dedicated team, we have consistently set
-              benchmarks in quality, reliability, and customer satisfaction.</p>
-            <p>
-              Our core values include innovation, sustainability, and
-              excellence, driving us to create products that meet the highest
-              standards of performance and durability.
-            </p>
-            <p>
-              We take pride in our commitment to sustainability and
-              environmental responsibility, ensuring our processes and products
-              contribute to a greener future.
-            </p>
-          </div>
-        </div>
-      </section>
+    {/* Right: Text Content */}
+    <div className="about-text">
+      <p>
+        Magnum Wonderplast (P) ltd is a leading name in the Automotive IC+EV components Industry worldwide delivering highly critical components for Steering Assy, 3rd Generation wheel Hub assys, HVAC assys for Commercial vehicles, Passenger vehicles, Two wheeler and Bicycles.
+      </p>
+      <p>With decades of expertise, state-of-the-art infrastructure, and a dedicated team, we have consistently set benchmarks in quality, reliability, and customer satisfaction.</p>
+      <p>Our core values include innovation, sustainability, and excellence, driving us to create products that meet the highest standards of performance and durability.</p>
+      <p>We take pride in our commitment to sustainability and environmental responsibility, ensuring our processes and products contribute to a greener future.</p>
+    </div>
+  </div>
+</section>
 
       <section className="statistics-section">
     <div className="statistics-heading">

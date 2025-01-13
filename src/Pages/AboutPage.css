@@ -11,12 +11,12 @@
 .about-us-section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
+    align-items: flex-start;
     margin: 0 auto;
     max-width: 1200px;
-    position: relative; /* Required for fade-up animation */
+    position: relative;
     animation: fadeUp 1.2s ease-in-out forwards;
-    opacity: 0; /* Start with hidden state for animation */
+    opacity: 0;
 }
 
 /* Title Styling */
@@ -25,10 +25,10 @@
     font-weight: bold;
     color: #212529;
     margin-bottom: 40px;
-    text-align: left; /* Left-aligned */
+    text-align: left;
     width: 100%;
     padding-left: 15px;
-    border-left: 6px solid #ff6347; /* Decorative left border */
+    border-left: 6px solid #ff6347;
     letter-spacing: 1px;
     line-height: 1.2;
 }
@@ -43,8 +43,8 @@
     width: 100%;
 }
 
-/* Video Container */
-.about-video-container {
+/* Image Container */
+.about-image-container {
     flex: 1;
     max-width: 500px;
     overflow: hidden;
@@ -52,11 +52,12 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.about-video {
+.about-image {
     width: 100%;
     height: auto;
     border-radius: 12px;
     display: block;
+    object-fit: cover;
 }
 
 /* Text Styling */
@@ -66,22 +67,19 @@
     font-size: 1.2rem;
     line-height: 1.8;
     color: #495057;
-    text-align: justify; /* Ensures even spacing across the container */
+    text-align: justify;
     padding-right: 10px;
 }
 
-/* Uniform Paragraph Styling */
 .about-text p {
-    font-size: 1.2rem; /* Unified font size */
-    font-weight: normal; /* Unified weight */
-    font-style: normal; /* Unified style */
+    font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 20px;
     word-spacing: 1px;
 }
 
-/* Hover Effect for Video */
-.about-video-container:hover {
+/* Hover Effect for Image */
+.about-image-container:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
@@ -106,27 +104,27 @@
         text-align: center;
     }
 
-    .about-video-container,
+    .about-image-container,
     .about-text {
         max-width: 100%;
     }
 
     .about-title {
-        text-align: center; /* Center title for smaller screens */
+        text-align: center;
         padding-left: 0;
         border-left: none;
         font-size: 3rem;
     }
 
     .about-text {
-        text-align: justify; /* Justify text for readability */
-        font-size: 1rem; /* Adjusted font size for mobile */
-        line-height: 1.6; /* Slightly adjusted line-height for better readability */
-        padding-right: 0; /* Remove extra padding */
+        text-align: justify;
+        font-size: 1rem;
+        line-height: 1.6;
+        padding-right: 0;
     }
 
     .about-text p {
-        font-size: 1rem; /* Consistent paragraph size */
+        font-size: 1rem;
         margin-bottom: 15px;
     }
 }
@@ -139,23 +137,21 @@
 
     .about-text {
         text-align: justify;
-        font-size: 0.9rem; /* Smaller font size for very small screens */
-        line-height: 1.4; /* Tighter line height */
-        padding-right: 0; /* Ensure text fits screen */
-        word-break: break-word; /* Prevent long words from breaking layout */
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding-right: 0;
+        word-break: break-word;
     }
 
     .about-text p {
-        font-size: 0.9rem; /* Unified small paragraph size */
-        margin-bottom: 10px; /* Adjusted spacing for tight layout */
+        font-size: 0.9rem;
+        margin-bottom: 10px;
     }
 
-    .about-video-container {
+    .about-image-container {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 }
-
-
 /* For Medium Screens */
 /* General Section Styles */
 .statistics-section {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,6 +21,7 @@ const Footer = () => {
               <a href="#"><FaTwitter /></a>
               <a href="#"><FaLinkedin /></a>
               <a href="https://www.instagram.com/magnumwonderplast/?hl=en"><FaInstagram /></a>
+              <a href="https://www.youtube.com/@magnumwonderplastpvtltd"><FaYoutube /></a>
             </li>
           </ul>
         </div>
