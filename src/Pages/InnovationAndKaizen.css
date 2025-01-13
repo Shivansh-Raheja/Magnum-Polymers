@@ -53,6 +53,40 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  /* Slick Carousel Styles */
+  .slick-slider {
+    position: relative;
+    width: 100%;
+  }
+  
+  .slick-track {
+    display: flex;
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slick-dots {
+    bottom: 20px;
+    display: none; /* Hide dots */
+  }
+  
+  .slick-prev, .slick-next {
+    display: none; /* Hide arrows */
+  }
+  
+  /* Adjust image size for slick carousel */
+  .slick-slide img {
+    width: 100%;
+    max-height: 400px; /* Ensure the image fits the carousel space */
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
   @media (max-width: 768px) {
     .innovation-kaizen-section {
       padding: 40px 20px;
@@ -73,6 +107,11 @@
   
     .kaizen-image {
       max-height: 300px;
+    }
+  
+    /* Make carousel images smaller on mobile */
+    .slick-slide img {
+      max-height: 250px;
     }
   }
   
