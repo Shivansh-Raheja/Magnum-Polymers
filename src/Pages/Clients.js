@@ -56,7 +56,7 @@ const ClientsSection = () => {
         },
       },
     ],
-    dots: true,
+    dots: false,
     arrows: false,
   };
 
