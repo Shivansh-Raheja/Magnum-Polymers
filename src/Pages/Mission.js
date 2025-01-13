@@ -22,7 +22,7 @@ const MissionVision = () => {
       <div className={`mission-vision-item ${visible ? 'visible' : ''}`}>
         <div className="mission-vision-content">
           <div className="mission-vision-image">
-            <img src="/mission.jpg" alt="Mission" />
+            <img src="/mission.png" alt="Mission" />
           </div>
           <div className="mission-vision-text">
             <h2>Our Mission</h2>
@@ -63,7 +63,7 @@ const MissionVision = () => {
       <div className={`mission-vision-item ${visible ? 'visible' : ''}`}>
         <div className="mission-vision-content">
           <div className="mission-vision-image">
-            <img src="/quality.png" alt="Quality Policy" />
+            <img src="/goal.png" alt="Quality Policy" />
           </div>
           <div className="mission-vision-text">
             <h2>Our Goal</h2>
