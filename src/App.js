@@ -25,6 +25,7 @@ import Duct from './Pages/Duct';
 import Ev from './Pages/Evcase';
 import Two from './Pages/Two';
 import PassengerSittingSystem from './Pages/PassengerSittingSystem';
+import InnovationAndKaizen from './Pages/InnovationAndKaizen';
 
 import './App.css'; // Ensure you have your styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -124,6 +125,10 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/products/passenger-sitting-system" element={<PassengerSittingSystem/>} />
+          {/* Add routes for other sections like About Us, Products, etc. */}
+        </Routes>
+        <Routes>
+          <Route path="good-manufacturing-practices/innovations-kaizens" element={<InnovationAndKaizen/>} />
           {/* Add routes for other sections like About Us, Products, etc. */}
         </Routes>
         <Footer />
