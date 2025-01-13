@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { FaWhatsapp, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp,FaTimes, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -18,7 +18,7 @@ const Footer = () => {
             <li>Haryana, India</li>
             <li className="social-links">
               <a href="#"><FaFacebook /></a>
-              <a href="#"><FaTwitter /></a>
+              <a href="https://x.com/magnumpvtltd"><FaTimes /></a>
               <a href="#"><FaLinkedin /></a>
               <a href="https://www.instagram.com/magnumwonderplast/?hl=en"><FaInstagram /></a>
               <a href="https://www.youtube.com/@magnumwonderplastpvtltd"><FaYoutube /></a>
