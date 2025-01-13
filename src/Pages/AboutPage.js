@@ -129,7 +129,7 @@ const AboutPage = () => {
         <div className="certification-image-container">
             <div className="certification-image">
                 <img 
-                    src="https://cdn3d.iconscout.com/3d/premium/thumb/certificate-3d-icon-download-in-png-blend-fbx-gltf-file-formats--diploma-degree-document-education-achievement-teacher-day-pack-school-icons-5117408.png" 
+                    src="/Certificate for IATF 16949-2016 - MAGNUM POLYMERS (1)_page-0001.jpg" 
                     alt="Certification Example" 
                     className="responsive-image dancing-image" 
                 />
