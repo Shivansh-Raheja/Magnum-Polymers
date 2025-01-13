@@ -36,7 +36,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 40px;
+  width: 140px;
   height: 2px;
   background-color: #ff5722;
 }
@@ -170,6 +170,10 @@
   .footer-list li img.footer-flag {
     width: 20px; /* Adjust flag size for small screens */
     margin-right: 10px;
+  }
+  .footer-column h3::after {
+    width: 100%;
+    left: 0;
   }
 
   .footer-bottom {
