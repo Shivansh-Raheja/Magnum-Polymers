@@ -42,7 +42,7 @@ const OurProducts = () => {
               reliability in every product we offer.
             </p>
             <p>
-            Magnum Wonderplast is a leading manufacturing firm specializing in high-quality products for the automotive industry and advanced moulding solutions. With a commitment to innovation and precision, the company produces a diverse range of components that cater to the evolving needs of modern vehicles, including dashboards, interior panels, and exterior trims. Leveraging state-of-the-art technology and a highly skilled workforce, Wonderplast Magnum excels in delivering durable, lightweight, and aesthetically pleasing products that enhance vehicle performance and design. Their moulding expertise ensures custom solutions for complex requirements, making them a trusted partner for top automotive brands worldwide.
+            Magnum Wonderplast is a leading manufacturing firm specializing in high-quality products for the automotive industry and advanced moulding solutions. With a commitment to innovation and precision, the company produces a diverse range of components that cater to the evolving needs of modern vehicles, including dashboards, interior panels, and exterior trims. Leveraging state-of-the-art technology and a highly skilled workforce, Magnum Wonderplast excels in delivering durable, lightweight, and aesthetically pleasing products that enhance vehicle performance and design. Their moulding expertise ensures custom solutions for complex requirements, making them a trusted partner for top automotive brands worldwide.
             </p>
       </div>
       <div className="image-container">
