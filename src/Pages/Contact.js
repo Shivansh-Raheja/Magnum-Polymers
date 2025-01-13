@@ -1,27 +1,54 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
-import { useEffect } from 'react';
+import Select from 'react-select'; // React-select for dropdown
+import { FaWhatsapp } from 'react-icons/fa'; // WhatsApp icon from react-icons
 import './Contact.css';
 
 const ContactUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     subject: '',
-    message: ''
+    message: '',
+    country: '',
+    company: ''
   });
+
+  const [countries, setCountries] = useState([]);
+
+  useEffect(() => {
+    // Fetch countries (using restcountries API)
+    fetch('https://restcountries.com/v3.1/all')
+      .then(response => response.json())
+      .then(data => {
+        setCountries(data.map(country => ({
+          value: country.cca2, // country code (ISO 2)
+          label: country.name.common // country name
+        })));
+      });
+  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const handleCountryChange = (selected) => {
+    setFormData({ ...formData, country: selected.label }); // Store the country name (label) here
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    // Make sure country is being passed correctly
+    console.log("Form Data: ", formData);
+
+    // Update the emailjs send method to include correct data.
     emailjs.sendForm('service_6n89xub', 'template_bh0jd1p', e.target, 'o1nQqm-AkSFGxwVfn')
       .then((result) => {
         console.log('Message sent successfully:', result.text);
@@ -31,7 +58,9 @@ const ContactUs = () => {
           email: '',
           phone: '',
           subject: '',
-          message: ''
+          message: '',
+          country: '',
+          company: ''
         });
       }, (error) => {
         console.log('Failed to send message:', error.text);
@@ -45,6 +74,7 @@ const ContactUs = () => {
         <Col md={6} className="contact-form-section">
           <Form onSubmit={handleSubmit} className="contact-form">
             <h2 className="form-title">Get In Touch</h2>
+
             <Form.Group controlId="formName">
               <Form.Control
                 type="text"
@@ -75,6 +105,30 @@ const ContactUs = () => {
                 placeholder="Your Phone Number"
                 name="phone"
                 value={formData.phone}
+                onChange={handleChange}
+                required
+                className="form-input"
+              />
+            </Form.Group>
+
+            {/* Shifted Country and Company fields after Phone */}
+            <Form.Group controlId="formCountry">
+              <Select
+                name="country"
+                options={countries}
+                value={countries.find(country => country.label === formData.country)} // match country name here
+                onChange={handleCountryChange}  // handler saves the country name (label)
+                placeholder="Select Country"
+                className="form-input"
+              />
+            </Form.Group>
+
+            <Form.Group controlId="formCompany">
+              <Form.Control
+                type="text"
+                placeholder="Your Company's Name"
+                name="company"
+                value={formData.company}
                 onChange={handleChange}
                 required
                 className="form-input"
@@ -126,6 +180,21 @@ const ContactUs = () => {
               title="Firm Location"
             ></iframe>
           </div>
+        </Col>
+      </Row>
+
+      {/* WhatsApp Button */}
+      <Row className="whatsapp-section" style={{marginTop:'30px'}}>
+        <Col className="text-center">
+          <a
+            href="https://wa.me/919811061756" // Updated WhatsApp link format
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-button"
+          >
+            <FaWhatsapp className="whatsapp-icon" />
+            Contact Us via WhatsApp
+          </a>
         </Col>
       </Row>
     </Container>
