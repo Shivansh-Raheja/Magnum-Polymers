@@ -8,36 +8,10 @@
     background-color: #000; /* Darker background on hover */
 }
 
-/* Bouncing animation */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-}
-
-.logo {
-    display: inline-block;
-    animation: bounce 2s infinite;
-}
-
-
-.navbar-custom .logo h1 {
-    color: #fff;  /* White text for the brand */
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transition: color 0.3s ease;
-}
-
-.navbar-custom .logo h1:hover {
-    color: #ff6347; /* Hover effect on brand */
-    text-shadow: 0 0 10px rgba(255, 99, 71, 0.7);
+.logo video {
+    width: 150px;
+    max-height: 40px; /* Set a max height to control header height */
+    object-fit: cover;
 }
 
 .navbar-custom .navbar-nav .nav-link {

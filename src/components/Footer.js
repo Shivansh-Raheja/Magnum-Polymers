@@ -20,7 +20,7 @@ const Footer = () => {
               <a href="#"><FaFacebook /></a>
               <a href="#"><FaTwitter /></a>
               <a href="#"><FaLinkedin /></a>
-              <a href="#"><FaInstagram /></a>
+              <a href="https://www.instagram.com/magnumwonderplast/?hl=en"><FaInstagram /></a>
             </li>
           </ul>
         </div>

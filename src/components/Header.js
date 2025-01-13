@@ -16,14 +16,18 @@ const Header = () => {
   return (
     <Navbar expand="lg" className="navbar-custom" sticky="top">
       <Container>
-        <Navbar.Brand as={Link} to="/" className="logo">
-          <img
-            src="/logo-again.png"
-            alt="Polymers Logo"
-            className="animate__animated animate__fadeIn"
-            style={{ width: '150px', height: 'auto' }}
-          />
-        </Navbar.Brand>
+      <Navbar.Brand as={Link} to="/" className="logo">
+  <video
+    src="/logovi.mp4" // Path to your video file
+    alt="Polymers Logo"
+    className="animate__animated animate__fadeIn"
+    style={{ width: '150px', height: '100px' }}
+    autoPlay
+    loop
+    muted
+  />
+</Navbar.Brand>
+
 
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
