@@ -28,10 +28,10 @@ const HealthSafety = () => {
   ];
 
   return (
-    <div className="health-safety-containerr">
-      <h1 className="titlee">We Value Our Family</h1>
-      <div className="contentt">
-        <div className="slider-containerr">
+    <div className="health-safety-containerrr">
+      <h1 className="titleee">We Value Our Family</h1>
+      <div className="contenttt">
+        <div className="slider-containerrr">
           <Slider {...sliderSettings}>
             {images.map((image, index) => (
               <div key={index} className="slide">
@@ -40,7 +40,7 @@ const HealthSafety = () => {
             ))}
           </Slider>
         </div>
-        <div className="text-containerr">
+        <div className="text-containerrr">
           <p>
             At our company, the health and safety of our employees and their families are our top priorities. We are committed to creating a safe and healthy work environment through comprehensive training, rigorous safety protocols, and continuous improvements in our practices.
           </p>

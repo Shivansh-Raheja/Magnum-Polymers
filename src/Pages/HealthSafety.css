@@ -1,18 +1,18 @@
-.health-safety-containerr {
+.health-safety-containerrr {
   padding: 40px 20px;
   background-color: #f9fafb;
   text-align: center;
   color: #333;
 }
 
-.titlee {
+.titleee {
   font-size: 40px;
   color: #1a1a1a;
   margin-bottom: 30px;
   font-weight: bold;
 }
 
-.contentt {
+.contenttt {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,13 +20,13 @@
   flex-wrap: wrap;
 }
 
-.slider-containerr {
+.slider-containerrr {
   flex: 1;
   max-width: 50%;
   min-width: 300px;
 }
 
-.slide-imagee {
+.slide-imageee {
   width: 75%;
   height: auto;
   border-radius: 10px;
@@ -34,7 +34,7 @@
   margin-left: 20%;
 }
 
-.text-containerr {
+.text-containerrr {
   flex: 1;
   max-width: 50%;
   min-width: 300px;
@@ -45,7 +45,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.text-containerr p {
+.text-containerrr p {
   font-size: 18px;
   color: #555;
   line-height: 1.6;
@@ -54,13 +54,13 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .contentt {
+  .contenttt {
     flex-direction: column;
   }
-  .text-containerr {
+  .text-containerrr {
     text-align: center;
   }
-  .slide-imagee{
+  .slide-imageee{
     margin-left: 10%;
   }
 }
