@@ -38,31 +38,31 @@ const InnovationAndKaizen = () => {
                     <Col md={6} className="image-section">
                         <Slider {...sliderSettings}>
                             <div>
-                                <img src="/p1.png" alt="Kaizen 1" className="kaizen-image" />
+                                <img src="/p1.PNG" alt="Kaizen 1" className="kaizen-image" />
                             </div>
                             <div>
-                                <img src="/p2.png" alt="Kaizen 2" className="kaizen-image" />
+                                <img src="/p2.PNG" alt="Kaizen 2" className="kaizen-image" />
                             </div>
                             <div>
-                                <img src="/p3.png" alt="Kaizen 3" className="kaizen-image" />
+                                <img src="/p3.PNG" alt="Kaizen 3" className="kaizen-image" />
                             </div>
                             <div>
-                                <img src="/p4.png" alt="Kaizen 4" className="kaizen-image" />
+                                <img src="/p4.PNG" alt="Kaizen 4" className="kaizen-image" />
                             </div>
                             <div>
-                                <img src="/p5.png" alt="Kaizen 5" className="kaizen-image" />
+                                <img src="/p5.PNG" alt="Kaizen 5" className="kaizen-image" />
                             </div>
                             <div>
-                                <img src="/p6.png" alt="Kaizen 6" className="kaizen-image" />
+                                <img src="/p6.PNG" alt="Kaizen 6" className="kaizen-image" />
                             </div>
                             <div>
-                                <img src="/p7.png" alt="Kaizen 7" className="kaizen-image" />
+                                <img src="/p7.PNG" alt="Kaizen 7" className="kaizen-image" />
                             </div>
                             <div>
-                                <img src="/p8.png" alt="Kaizen 8" className="kaizen-image" />
+                                <img src="/p8.PNG" alt="Kaizen 8" className="kaizen-image" />
                             </div>
                             <div>
-                                <img src="/p9.png" alt="Kaizen 9" className="kaizen-image" />
+                                <img src="/p9.PNG" alt="Kaizen 9" className="kaizen-image" />
                             </div>
                         </Slider>
                     </Col>
