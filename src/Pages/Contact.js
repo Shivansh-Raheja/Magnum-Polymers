@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
-import Select from 'react-select'; // React-select for dropdown
 import { FaWhatsapp } from 'react-icons/fa'; // WhatsApp icon from react-icons
+import { Message } from 'rsuite'; // Importing Message component from rsuite
 import './Contact.css';
 
 const ContactUs = () => {
@@ -17,42 +17,34 @@ const ContactUs = () => {
     subject: '',
     message: '',
     country: '',
+    state: '',
     company: ''
   });
 
-  const [countries, setCountries] = useState([]);
-
-  useEffect(() => {
-    // Fetch countries (using restcountries API)
-    fetch('https://restcountries.com/v3.1/all')
-      .then(response => response.json())
-      .then(data => {
-        setCountries(data.map(country => ({
-          value: country.cca2, // country code (ISO 2)
-          label: country.name.common // country name
-        })));
-      });
-  }, []);
+  const [showMessage, setShowMessage] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleCountryChange = (selected) => {
-    setFormData({ ...formData, country: selected.label }); // Store the country name (label) here
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Make sure country is being passed correctly
+
+    // Log form data for debugging
     console.log("Form Data: ", formData);
 
-    // Update the emailjs send method to include correct data.
-    emailjs.sendForm('service_6n89xub', 'template_bh0jd1p', e.target, 'o1nQqm-AkSFGxwVfn')
+    // Send email with emailjs
+    emailjs.sendForm('service_8leu1lj', 'template_qby788q', e.target, 'Mtnkwo1y2pwHX1Myo')
       .then((result) => {
         console.log('Message sent successfully:', result.text);
-        alert('Message sent successfully!');
+
+        // Show success message
+        setShowMessage({
+          type: 'success',
+          content: 'Your message has been sent successfully!'
+        });
+
+        // Reset the form after submission
         setFormData({
           name: '',
           email: '',
@@ -60,11 +52,17 @@ const ContactUs = () => {
           subject: '',
           message: '',
           country: '',
+          state: '',
           company: ''
         });
       }, (error) => {
         console.log('Failed to send message:', error.text);
-        alert('Failed to send message, please try again.');
+
+        // Show error message
+        setShowMessage({
+          type: 'error',
+          content: 'There was an error sending your message. Please try again.'
+        });
       });
   };
 
@@ -111,14 +109,27 @@ const ContactUs = () => {
               />
             </Form.Group>
 
-            {/* Shifted Country and Company fields after Phone */}
+            {/* Manually entered Country and State */}
             <Form.Group controlId="formCountry">
-              <Select
+              <Form.Control
+                type="text"
+                placeholder="Your Country"
                 name="country"
-                options={countries}
-                value={countries.find(country => country.label === formData.country)} // match country name here
-                onChange={handleCountryChange}  // handler saves the country name (label)
-                placeholder="Select Country"
+                value={formData.country}
+                onChange={handleChange}
+                required
+                className="form-input"
+              />
+            </Form.Group>
+
+            <Form.Group controlId="formState">
+              <Form.Control
+                type="text"
+                placeholder="Your State"
+                name="state"
+                value={formData.state}
+                onChange={handleChange}
+                required
                 className="form-input"
               />
             </Form.Group>
@@ -197,6 +208,13 @@ const ContactUs = () => {
           </a>
         </Col>
       </Row>
+
+      {/* Message Display */}
+      {showMessage && (
+        <Message showIcon type={showMessage.type}>
+          <strong>{showMessage.type.charAt(0).toUpperCase() + showMessage.type.slice(1)}!</strong> {showMessage.content}
+        </Message>
+      )}
     </Container>
   );
 };
