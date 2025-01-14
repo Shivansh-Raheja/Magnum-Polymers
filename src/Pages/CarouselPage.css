@@ -18,6 +18,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: left;
   }
   
   .tool-design-left ul {
@@ -28,6 +29,7 @@
   .tool-design-left li {
     font-size: 1.2rem;
     line-height: 1.6;
+    text-align: justify;
   }
   
   .tool-design-right {
