@@ -1,84 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SteeringComponents.css';
-import { useEffect } from 'react';
-
-const steeringComponents = [
-  '/products/68.png',
-  '/products/63.png',
-  '/products/62.png',
-  '/products/61.png',
-  '/products/56.png',
-  '/products/55.png',
-  '/products/53.png',
-  '/products/51.png',
-  '/products/47.png',
-  '/products/46.png',
-  '/products/45.png',
-  '/products/44.png',
-  '/products/43.png',
-  '/products/41.png',
-  '/products/40.png',
-  '/products/39.png',
-  '/products/38.png',
-  '/products/37.png',
-  '/products/36.png',
-  '/products/35.png',
-  '/products/34.png',
-  '/products/33.png',
-  '/products/32.png',
-  '/products/31.png',
-  '/products/30.png',
-  '/products/29.png',
-  '/products/28.png',
-  '/products/27.png',
-  '/products/26.png',
-  '/products/25.png',
-  '/products/24.png',
-  '/products/23.png',
-  '/products/22.png',
-  '/products/21.png',
-  '/products/20.png',
-  '/products/19.png',
-  '/products/18.png',
-  '/products/17.png',
-  '/products/16.png',
-  '/products/15.png',
-  '/products/13.png',
-  '/products/12.png',
-  '/products/11.png',
-  '/products/9.png',
-  '/products/8.png',
-  '/products/7.png',
-  '/products/6.png',
-  '/products/5.png',
-  '/products/4.png',
-  '/products/3.png',
-];
 
 const SteeringComponents = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
-    
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="steering-components-page">
-      {/* Image Banner */}
-      <div className="image-bannerr">
-        <img src="/Steeringcomp.png" alt="Steering Components Banner" />
-      </div>
+    <div className="steering-components-new-page">
+      <div className="content-new-container">
+        {/* Top Image */}
+        <div className="top-new-image">
+          <img src="/productpage1.png" alt="Steering Components" />
+        </div>
 
-      {/* Heading with Wave Animation */}
-      <h1 className="page-headingg animate-wave">
-        MOTOR VEHICLE & COMMERCIAL VEHICLES STEERING COMPONENTS
-      </h1>
+        {/* Heading */}
+        <h1 className="page-new-heading">
+          MOTOR VEHICLE & COMMERCIAL VEHICLES STEERING COMPONENTS
+        </h1>
 
-      {/* Components Grid */}
-      <div className="components-grid">
-        {steeringComponents.map((image, index) => (
-          <div key={index} className="component-item">
-            <img src={image} alt={`Steering Component ${index + 1}`} />
-          </div>
-        ))}
+        {/* Paragraphs Section */}
+        <div className="new-paragraphs-section">
+          <p>
+            At Magnum Wonderplast, we specialize in the production of high-quality steering components for motor and commercial vehicles. Our state-of-the-art manufacturing processes ensure precision and durability in every part we produce. By leveraging advanced engineering techniques, we achieve superior quality that sets us apart in the industry.
+          </p>
+          <p>
+            Utilizing cutting-edge technology and materials, we are committed to continuous improvement and innovation. Each component is crafted to meet stringent industry standards, ensuring optimal performance and safety. Our skilled team of engineers and technicians work tirelessly to push the boundaries of what's possible, delivering components that are both reliable and efficient.
+          </p>
+          <p>
+            Our dedication to excellence drives us to deliver products that exceed expectations. From initial design to final production, every step is meticulously managed to provide our customers with the best possible solutions for their steering component needs. We pride ourselves on our customer-centric approach, ensuring that each product is tailored to meet the unique requirements of our clients.
+          </p>
+          <p>
+            At Magnum Wonderplast, sustainability is at the heart of our operations. We adopt eco-friendly manufacturing practices to minimize our environmental footprint. Our commitment to sustainability extends beyond our products, as we continuously seek ways to enhance the efficiency of our processes and reduce waste.
+          </p>
+          <p>
+            We believe that our success is built on strong relationships with our clients. Our team is dedicated to providing unparalleled support and service, ensuring that every customer experience is positive. With a focus on quality, innovation, and customer satisfaction, Magnum Wonderplast remains a leader in the steering components industry.
+          </p>
+        </div>
       </div>
     </div>
   );
