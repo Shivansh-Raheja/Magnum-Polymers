@@ -21,6 +21,7 @@
   margin-bottom: 20px;
   max-height: 600px; /* Limits the maximum height of the image */
   object-fit: fill;
+  border: 4px solid #ddd;
 }
 
 .page-new-heading {
