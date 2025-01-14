@@ -8,11 +8,15 @@ const trainingData = {
   },
   managementTraining: {
     images: ['/management1.jpeg', '/management2.jpeg', '/management3.jpeg', '/management4.jpeg', '/management5.jpeg', '/management6.jpeg'],
-    description: 'P.O.R.S.E and Management Training aims to enhance leadership skills, project management capabilities, and strategic thinking.',
+    description: 'P.O.S.H and Management Training aims to enhance leadership skills, project management capabilities, and strategic thinking.',
   },
   dojoRoom: {
-    images: ['/dojo1.jpeg', '/dojo2.png', '/dojo3.png','/dojo5.png','/dojo6.png'],
+    images: ['/dojo1.jpeg', '/dojo2.png', '/dojo3.png', '/dojo5.png', '/dojo6.png'],
     description: 'The DOJO Room is designed to provide immersive, hands-on training experiences, focusing on practical skills development and team collaboration.',
+  },
+  fireSafety: {
+    images: ['/fire1.jpg', '/fire2.jpg', '/fire3.PNG' , '/fire4.PNG', '/fire5.PNG' , '/fire6.PNG'], // Add paths to your fire safety images
+    description: 'Fire Safety Training ensures employees are well-prepared to handle fire emergencies, understand evacuation protocols, and use fire-fighting equipment effectively.',
   }
 };
 
@@ -50,6 +54,12 @@ const Training = () => {
           onClick={() => handleTrainingChange('dojoRoom')}
         >
           DOJO Room
+        </button>
+        <button
+          className={`training-button ${selectedTraining === 'fireSafety' ? 'active' : ''}`}
+          onClick={() => handleTrainingChange('fireSafety')}
+        >
+          Fire Safety Training
         </button>
       </div>
 
