@@ -27,8 +27,8 @@ const HomePage = () => {
   }));  
 
   const videos = [
-    { src: '/4941355-hd_1920_1080_25fps.mp4', alt: 'Video 1' },
-    { src: '898979-hd_1920_1080_25fps.mp4', alt: 'Video 2' },
+    { src: '/homevid.mp4', alt: 'Video 1' },
+    { src: '/homevid.mp4', alt: 'Video 2' },
   ];
 
   const galleryVideos = [
