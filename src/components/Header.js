@@ -63,7 +63,6 @@ const Header = () => {
               CAPABILITIES
             </Nav.Link>
             <NavDropdown title="INFRASTRUCTURE" id="infrastructure-dropdown" className={location.pathname.startsWith('/infrastructure') ? 'active' : ''}>
-              <NavDropdown.Item as={Link} to="/infrastructure/machine_capacity">VIEW INFRASTRUCTURE</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/plant-photos-and-videos">PLANTS PHOTOS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/infrastructure/machine_capacity">LIST OF MACHINES AND CAPABILITIES</NavDropdown.Item>
             </NavDropdown>
