@@ -12,7 +12,7 @@ const Footer = () => {
           <ul className="footer-list">
             <li><FaWhatsapp /> +91-98110 61756</li>
             <li><FaWhatsapp /> +91 93184 93058</li>
-            <li><FaEnvelope /> Inquiry@magnumwonderplast.com</li>
+            <li><FaEnvelope /> inquiry@magnumwonderplast.com</li>
             <li><FaMapMarkerAlt /> Plot No:14,19,25,30 Sector-59,</li>
             <li>Ind Estate, Faridabad 121004,</li>
             <li>Haryana, India</li>
