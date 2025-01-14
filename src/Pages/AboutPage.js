@@ -115,7 +115,7 @@ const AboutPage = () => {
             <h2>By Whom We Are Accredited ?</h2>
             <p>
             We are Accredited by Organizations like BSI for IATF16949-2016 ,CVI for ISO 14001 regarding environmental management and MSME for ZED GOLD regarding sustainability.
-            We are also certified by Maruti Suzuki India limited as a green vendor for MACE.
+            We are also certified by Maruti Suzuki India Limited as a green vendor for MACE.
             </p>
             <p>
                 These certifications validate our commitment to delivering exceptional 
