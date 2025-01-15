@@ -58,8 +58,8 @@ const AboutUs = () => {
       </div>
       <div className="image-container">
         <img
-          src="/about-us.jpeg"
-          data-src="/about-us.jpeg"
+          src="/about.png"
+          data-src="/about.png"
           alt="About Us"
           className={`lazyload ${isVisible ? 'loaded' : ''}`}
           width="500"
