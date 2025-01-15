@@ -34,7 +34,7 @@ const PassengerSittingSystem = () => {
         <div className="chair-description-container">
           <h2>BLOW MOULDED SEATING SYSTEM FOR BUS</h2>
           <p>
-            Our comfortable passenger sitting system is designed to offer a
+            Our comfortable and durable passenger seating system is designed to offer a
             superior level of comfort, durability, and safety. The ergonomic
             design provides excellent support, making long journeys more
             enjoyable. Perfect for buses, coaches, and other public transport

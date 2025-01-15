@@ -35,7 +35,7 @@ const Events = () => {
 
       {/* Final Section with Video */}
       <div className="events-final-section">
-        <h2>See You at Our Next Event: Index-Plus</h2>
+        <h2>See You at Our Next Event: BHARAT MOBILITY GLOBAL EXPO 2025</h2>
         <div className="events-video-text">
           <div className="video-containerr">
             <video controls autoPlay muted className="event-video">
@@ -45,7 +45,7 @@ const Events = () => {
           </div>
           <div className="video-description">
             <p>
-              Join us for Index-Plus, an extraordinary event that showcases our latest innovations, products, and technology. This event is set to bring together industry leaders, experts, and enthusiasts for an immersive experience. From thought-provoking keynotes to hands-on demonstrations, Index-Plus will offer something for everyone.
+              Join us for GLOBAL-EXPO 2025 , Yashbhoomi IICC, Dwarka,New Delhi from 18th to 21st of January - 2025 ,Hall no. 04 | Stall No. T-22, an extraordinary event that showcases our latest innovations, products, and technology. This event is set to bring together industry leaders, experts, and enthusiasts for an immersive experience. From thought-provoking keynotes to hands-on demonstrations, Index-Plus will offer something for everyone.
             </p>
             <p>
               Our events are carefully designed to leave a lasting impression. With engaging workshops, networking opportunities, and high-impact presentations, we aim to inspire, educate, and entertain. Be a part of the excitement and see firsthand how we are shaping the future of our industry.

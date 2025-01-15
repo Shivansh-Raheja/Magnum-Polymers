@@ -30,12 +30,6 @@ const SteeringComponents = () => {
           <p>
             Our dedication to excellence drives us to deliver products that exceed expectations. From initial design to final production, every step is meticulously managed to provide our customers with the best possible solutions for their steering component needs. We pride ourselves on our customer-centric approach, ensuring that each product is tailored to meet the unique requirements of our clients.
           </p>
-          <p>
-            At Magnum Wonderplast, sustainability is at the heart of our operations. We adopt eco-friendly manufacturing practices to minimize our environmental footprint. Our commitment to sustainability extends beyond our products, as we continuously seek ways to enhance the efficiency of our processes and reduce waste.
-          </p>
-          <p>
-            We believe that our success is built on strong relationships with our clients. Our team is dedicated to providing unparalleled support and service, ensuring that every customer experience is positive. With a focus on quality, innovation, and customer satisfaction, Magnum Wonderplast remains a leader in the steering components industry.
-          </p>
         </div>
       </div>
     </div>

@@ -35,7 +35,7 @@ const Training = () => {
 
   return (
     <div className="training-container">
-      <h1 className="title">Trainings Provided By Us</h1>
+      <h1 className="title">Employee Trainings</h1>
       <div className="training-buttons">
         <button
           className={`training-button ${selectedTraining === 'healthAwareness' ? 'active' : ''}`}

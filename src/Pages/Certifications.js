@@ -44,7 +44,7 @@ const Certifications = () => {
           <div className="machining-text">
             <h2>Green Vendor Certification by MACE</h2>
             <p>
-              We are proud to be certified by Maruti ACE, a recognition of our commitment to delivering high-quality automotive parts. This certification validates our strict adherence to manufacturing standards that meet Maruti's rigorous quality requirements. It showcases our capability in producing components that meet the precise specifications of the automotive industry.
+              We are proud to be certified by Maruti MACE as a Green Vendor, a recognition of our commitment to delivering high-quality automotive parts. This certification validates our strict adherence to manufacturing standards that meet Maruti's rigorous quality requirements. It showcases our capability in producing components that meet the precise specifications of the automotive industry.
               <br /><br />
               As part of this certification, we continually strive to improve the performance and reliability of our products. This certification strengthens our position as a trusted supplier in the automotive sector, particularly in the production of essential vehicle components.
             </p>
@@ -58,11 +58,11 @@ const Certifications = () => {
             <img src="/EMS_Certifikat 14001_15__page-0001.jpg" alt="IAF Environmental Management System Certification" />
           </div>
           <div className="machining-text">
-            <h2>IAF Environmental Management System Certification</h2>
+            <h2>Environmental Management System Certification</h2>
             <p>
-              Our IAF-certified Environmental Management System (EMS) certification emphasizes our commitment to sustainability and responsible environmental practices. This certification is a reflection of our dedication to managing our environmental impacts and aligning with global standards for environmental responsibility.
+              Our Environmental Management System (EMS) ISO 14001:2015 certification emphasizes our commitment to sustainability and responsible environmental practices. This certification is a reflection of our dedication to managing our environmental impacts and aligning with global standards for environmental responsibility.
               <br /><br />
-              The IAF certification helps ensure that we are minimizing our environmental footprint while maintaining operational efficiency. Through continuous monitoring and improvements, we ensure compliance with the highest environmental standards, ensuring that all our processes, from manufacturing to product delivery, follow eco-friendly practices. This certification affirms our commitment to creating a sustainable future.
+              The EMS certification helps ensure that we are minimizing our environmental footprint while maintaining operational efficiency. Through continuous monitoring and improvements, we ensure compliance with the highest environmental standards, ensuring that all our processes, from manufacturing to product delivery, follow eco-friendly practices. This certification affirms our commitment to creating a sustainable future.
             </p>
           </div>
         </div>

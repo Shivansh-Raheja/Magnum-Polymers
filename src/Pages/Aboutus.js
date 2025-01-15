@@ -42,19 +42,17 @@ const AboutUs = () => {
         </p>
         <p>
           Magnum Wonderplast has experience of working with big corporates like
-          HMC, KOYO, SANDEN, JTEKT ,HONDA ,TOYOTA ,YAMAHA ,TATA ,SANTEC ETC. and satisfying them
+          HMC, KOYO, SANDEN, JTEKT, HONDA, TOYOTA, YAMAHA, TATA, SANTEC,NTN, ILJIN, RANE NSK, ROKI UNOMINDA ETC. and satisfying them
           over the years. Presently, Magnum Wonderplast is known for its quality
           Injection & blow moulded products, problem solving techniques, Cost
           reduction projects, Imports replacements and its active CSR activities.
         </p>
         <p>
-          Magnum Wonderplast is an IATF-16949, MACE GREEN , MSME ZED GOLD , ISO 14001 certified Company having four plants in sector 59, FARIDABAD,which is an industrial hub in Delhi NCR. 
+          Magnum Wonderplast is an IATF-16949, MACE GREEN, ISO 14001, MSME ZED GOLD certified Company having multiple locations in sector 59, FARIDABAD,which is an industrial hub in Delhi NCR. 
         </p>
-        <p>MAGNUM
-          quality products which are the integral part of various industrial
-          products useful in our daily life. Magnum is original equipment supplier to
-          various industries like automobile, consumer durables, Power
-          generation, Toys etc.</p>
+        <p>Magnum is original equipment supplier to
+          various industries like Automobile, Consumer Durables, Power
+          Generation etc.</p>
       </div>
       <div className="image-container">
         <img

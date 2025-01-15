@@ -32,11 +32,11 @@ const HomePage = () => {
   ];
 
   const galleryVideos = [
-    { src: '/2.mp4', alt: 'Work Video 2' },
-    { src: '/3.mp4', alt: 'Work Video 3' },
-    { src: '/4.mp4', alt: 'Work Video 4' },
-    { src: '/5.mp4', alt: 'Work Video 5' },
-    { src: '/6.mp4', alt: 'Work Video 6' },
+    { src: '/2.mp4', alt: 'Work Video 1' },
+    { src: '/3.mp4', alt: 'Work Video 2' },
+    { src: '/4.mp4', alt: 'Work Video 3' },
+    { src: '/5.mp4', alt: 'Work Video 4' },
+    { src: '/6.mp4', alt: 'Work Video 5' },
     // { src: '/4.mp4', alt: 'Work Video 6' },
     // { src: '/1.mp4', alt: 'Work Video 5' },
     // { src: '/3.mp4', alt: 'Work Video 6' },
@@ -129,7 +129,12 @@ const HomePage = () => {
       playsInline
     />
     <div className="video-overlay">
-      <h1 className="banner-title">Welcome to Magnum Wonderplast Private Limited</h1>
+    <p className="banner-title" style={{fontSize:'3.0rem'}}>
+  Welcome<br />
+  to<br />
+  Magnum Wonderplast (P) Ltd
+</p>
+
       <p className="banner-subtitle">We Mould Your Ideas</p>
       <div
         className="steering-icon"

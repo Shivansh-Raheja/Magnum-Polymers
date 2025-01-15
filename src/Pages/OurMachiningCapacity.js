@@ -6,17 +6,17 @@ const machines = [
     { 
         name: "Blow Moulding - [1.0 - 150 LTRS]", 
         image: "/blowm.png", 
-        description: "Blow Moulding is a manufacturing process used for producing hollow plastic parts. It is commonly used to create containers like bottles. The process involves inflating a plastic tube inside a mould to form the desired shape. This machine is highly efficient in producing high volumes. It ensures precise and consistent product quality. Blow Moulding is widely used in industries like packaging and consumer goods. The ability to produce lightweight yet durable products makes it indispensable. Advanced automation enhances production rates and reduces material waste."
+        description: "Blow Moulding is a manufacturing process used for producing hollow plastic parts like HVAC ducts, fuel tanks,coolent reservoir, radiator reservoir etc. The process involves inflating a plastic tube inside a mould to form the desired shape. This machine is highly efficient in producing high volumes. It ensures precise and consistent product quality. Blow Moulding is widely used in industries like packaging and consumer goods. The ability to produce lightweight yet durable products makes it indispensable. Advanced automation enhances production rates and reduces material waste."
       },
       { 
         name: "Vertical Injection Moulding - [60 - 120 TONNES]", 
         image: "/vertical.jpg", 
-        description: "Vertical Injection Moulding machines are used to inject molten plastic into moulds under high pressure. These machines are designed for producing complex and small parts with great precision. They are highly versatile and energy-efficient. The vertical design ensures efficient space usage in factories. It is ideal for applications requiring high precision and repeatability. These machines are crucial for medical devices, electronics, and automotive components. Their compact design integrates seamlessly into modular manufacturing setups. Vertical Injection Moulding contributes significantly to reducing manufacturing defects."
+        description: "Vertical Injection Moulding machines are used to inject molten plastic into moulds under high pressure. These machines are designed for producing complex and small parts with metal and non-metal inserts ,this process is called as insert moulding. These machines are highly versatile and energy-efficient. The vertical design ensures efficient space usage in factories. It is ideal for applications requiring high precision and repeatability. These machines are crucial for medical devices, electronics, and automotive components. Their compact design integrates seamlessly into modular manufacturing setups. Vertical Injection Moulding contributes significantly to reducing manufacturing defects."
       },
       { 
-        name: "Tool-Room", 
+        name: "Mould Design and Tool Room", 
         image: "/toolroom.jpg", 
-        description: "Tool-Room involves designing and manufacturing custom tools and dies used in various machining processes. This capability ensures full control over quality and turnaround time. We specialize in creating precise tools tailored to customer specifications. It reduces lead times and enhances production efficiency. It allows for better customization and cost management in manufacturing. This approach minimizes dependency on external vendors and ensures rapid prototyping. The flexibility of in-house tooling supports innovation and process optimization. It plays a vital role in maintaining stringent quality standards.",
+        description: "Our Mould Design department uses latest design software to design highly critical moulds with speed and accuracy , after mould designing we also perform mould flow analysis to avoid post mould making rectifications and time wastage. Our tool room is equipped with latest mould manufacturing machines to make custom tools , fixture and dies. This capability ensures full control over quality and turnaround time. We specialize in creating precise tools tailored to customer specifications. It reduces lead times and enhances production efficiency. It allows for better customization and cost management in manufacturing. This approach minimizes dependency on external vendors and ensures rapid prototyping. The flexibility of in-house tooling supports innovation and process optimization. It plays a vital role in maintaining stringent quality standards.",
         link:"/carausel"
       },
       { 
@@ -35,9 +35,9 @@ const machines = [
         description: "The Vision Measuring Machine (VMM) is used for precise measurement of parts and components. It uses optical sensors to capture the dimensions of objects, providing high accuracy without physical contact. This machine is ideal for inspecting delicate or small components. It allows for quick and non-destructive testing. With its advanced software, it generates detailed reports for quality control. The machine is critical for industries requiring stringent dimensional checks. It ensures product consistency and compliance with standards. Its non-contact nature makes it suitable for fragile or sensitive materials."
       },
       { 
-        name: "CRYSTA-Apex coordinate measuring machine", 
+        name: "Coordinate measuring machine MITUTOYO CRYSTA APEX V574", 
         image: "/mut3.jpg", 
-        description: "The latest generation CRYSTA-Apex coordinate measuring machines, the new CRYSTA-Apex V Series, is packed with state of the art technology, necessary for performing very accurate measurements at high speed. All new, using Mitutoyo’s world-renowned ABS scales, the CRYSTA-Apex V series has a high resistance to environmental conditions and does not require to perform homing upon start-up. SMS capability enables status and service monitoring, ready for use in a Smart Factory environment.A future proof investment, the CRYSTA-Apex V is capable of tackling any task you might have in the future thanks to its ability to change or add probe systems and software with ease."
+        description: "The latest generation MITUTOYO CRYSTA-Apex coordinate measuring machine is packed with state of the art technology, necessary for performing very accurate measurements at high speed. All new, using Mitutoyo’s world-renowned ABS scales, the CRYSTA-Apex V series has a high resistance to environmental conditions and does not require to perform homing upon start-up. SMS capability enables status and service monitoring, ready for use in a Smart Factory environment.A future proof investment, the CRYSTA-Apex V is capable of tackling any task you might have in the future thanks to its ability to change or add probe systems and software with ease."
       }
 ];
 

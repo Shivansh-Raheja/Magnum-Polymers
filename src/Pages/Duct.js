@@ -30,12 +30,6 @@ const Duct = () => {
           <p>
             Magnum Wonderplast’s HV duct assembly filter elements are built to last, offering exceptional performance over extended periods. Our commitment to continuous improvement means that we are always innovating, ensuring that our products remain at the forefront of the industry. We aim to deliver solutions that not only meet but exceed customer expectations for both performance and longevity.
           </p>
-          <p>
-            Sustainability is a core value at Magnum Wonderplast. Our HV duct assembly filters are produced with eco-friendly practices that reduce environmental impact. We utilize recyclable materials and energy-efficient manufacturing processes, ensuring that our products contribute to a greener future while maintaining the highest standards of quality and performance.
-          </p>
-          <p>
-            At Magnum Wonderplast, we are dedicated to building strong partnerships with our clients. We take the time to understand the unique requirements of each customer and provide tailored solutions for their needs. Our team is committed to delivering outstanding customer support, ensuring that every project is handled with the utmost care and attention to detail. With a focus on innovation, quality, and sustainability, we continue to lead the way in the HV duct assembly filter element industry.
-          </p>
         </div>
       </div>
     </div>

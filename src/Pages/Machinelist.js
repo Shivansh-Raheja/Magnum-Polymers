@@ -23,7 +23,8 @@ const Machines = () => {
     { id: 14, machineType: 'EDM', capacity: '850X590X370', make: 'PHILIPS' },
     { id: 15, machineType: 'VERTICAL MACHINING CENTRE (VMC) * 2 NOS', capacity: 'VF2', make: 'HAAS' },
     { id: 16, machineType: 'EDM (PZE 400)', capacity: '980x570x400', make: 'PHILIPS' },
-    { id: 17, machineType: 'VMM CRYSTA APEX V574', capacity: '500 x 700 x 400', make: 'MITUTOYO' },
+    { id: 17, machineType: 'CMM CRYSTA APEX V574', capacity: '500 x 700 x 400', make: 'MITUTOYO' },
+    { id: 18, machineType: 'VMM (OPTIV LITE)', capacity: '500 X 400', make: 'HEXAGON' },
   ];
 
   const injectionMouldingData = [

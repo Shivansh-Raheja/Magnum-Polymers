@@ -48,7 +48,7 @@ const AboutPage = () => {
     {/* Right: Text Content */}
     <div className="about-text">
       <p>
-        Magnum Wonderplast (P) ltd is a leading name in the Automotive IC+EV components Industry worldwide delivering highly critical components for Steering Assy, 3rd Generation wheel Hub assys, HVAC assys for Commercial vehicles, Passenger vehicles, Two wheeler and Bicycles.
+        <b>Magnum Wonderplast (P) Ltd</b> is a leading name in the Automotive IC+EV components Industry worldwide delivering highly critical components for Steering Assy, 3rd Generation wheel Hub assys, HVAC assys for Commercial vehicles, Passenger vehicles, Two wheeler and Bicycles.
       </p>
       <p>With decades of expertise, state-of-the-art infrastructure, and a dedicated team, we have consistently set benchmarks in quality, reliability, and customer satisfaction.</p>
       <p>Our core values include innovation, sustainability, and excellence, driving us to create products that meet the highest standards of performance and durability.</p>
@@ -114,8 +114,8 @@ const AboutPage = () => {
         <div className="certification-text">
             <h2>By Whom We Are Accredited ?</h2>
             <p>
-            We are Accredited by Organizations like BSI for IATF16949-2016 ,CVI for ISO 14001 regarding environmental management and MSME for ZED GOLD regarding sustainability.
-            We are also certified by Maruti Suzuki India Limited as a green vendor for MACE.
+            We are Accredited by BSI for IATF16949-2016 ,CVI for ISO 14001 and Ministry of MSME for ZED GOLD.
+            We are also certified by Maruti Suzuki India Limited as a Green vendor for MACE.
             </p>
             <p>
                 These certifications validate our commitment to delivering exceptional 
