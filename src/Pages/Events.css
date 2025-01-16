@@ -75,6 +75,7 @@
 .event-video {
     width: 100%;
     border-radius: 8px;
+    max-height: 300px;
 }
 
 .video-description {

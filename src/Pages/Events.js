@@ -39,7 +39,7 @@ const Events = () => {
         <div className="events-video-text">
           <div className="video-containerr">
             <video controls autoPlay muted className="event-video">
-              <source src="/VID-20250110-WA0009.mp4" type="video/mp4" />
+              <source src="/expo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
