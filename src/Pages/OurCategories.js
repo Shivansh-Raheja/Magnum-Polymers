@@ -58,8 +58,8 @@ const OurCategories = () => {
 
         <Link to="/products/steering-components" className="product-tiles">
           <img
-            src="/spm.png"
-            data-src="/spm.png"
+            src="/cat3.png"
+            data-src="/cat3.png"
             alt="Inhouse Tooling & SPM"
             className="lazyload"
           />

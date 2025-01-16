@@ -17,6 +17,7 @@ const ClientsSection = () => {
     { id: 11, logo: '/c11.png' },
     { id: 21, logo: '/c21.png' },
     { id: 22, logo: '/c22.png' },
+    { id: 23, logo: '/c23.png' },
   ];
 
   const indirectClients = [
