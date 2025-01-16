@@ -39,7 +39,7 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Quick Links</h3>
           <ul className="footer-list">
-            <li><a href="/Magnum Company Profile 2024-25.pptx">Profile</a></li>
+            <li><a href="/Company Profile.pptx">Profile</a></li>
             <li><a href="/contact">Get a Quote</a></li>
           </ul>
         </div>
