@@ -17,7 +17,7 @@ const Footer = () => {
             <li>Ind Estate, Faridabad 121004,</li>
             <li>Haryana, India</li>
             <li className="social-links">
-              <a href="#"><FaFacebook /></a>
+              <a href="https://www.facebook.com/profile.php?id=61572176369127"><FaFacebook /></a>
               <a href="https://x.com/magnumpvtltd"><FaTimes /></a>
               <a href="https://www.linkedin.com/in/magnum-wonderplast-a1994b346/"><FaLinkedin /></a>
               <a href="https://www.instagram.com/magnumwonderplast/?hl=en"><FaInstagram /></a>
