@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './HomePage.css';  // Custom styles for homepage
 import 'lazysizes';
 import { useLocation } from 'react-router-dom';
+import { FaWhatsapp } from 'react-icons/fa';
 import ClientsSection from './Clients';
 import OurService from './Services';
 import AboutUs from './Aboutus';
@@ -179,57 +180,20 @@ const HomePage = () => {
   </div>
 </section>
 
-{/* <section
-      className={`our-products ${isVisibleProducts ? 'visible' : ''}`}
-      ref={productsSectionRef}
-    >
-      <div className="our-products-container">
-
-        <div className="left-side">
-          <div className="intro-text">
-            <h2 style={{fontWeight:"bold"}}>Our Products</h2>
-            <p>
-              Explore our wide range of high-quality products designed to meet
-              the diverse needs of various industries. From automotive
-              components to consumer goods, we ensure exceptional quality and
-              reliability in every product we offer.
-            </p>
-            <p>
-            Magnum Wonderplast is a leading manufacturing firm specializing in high-quality products for the automotive industry and advanced moulding solutions. With a commitment to innovation and precision, the company produces a diverse range of components that cater to the evolving needs of modern vehicles, including dashboards, interior panels, and exterior trims. Leveraging state-of-the-art technology and a highly skilled workforce, Wonderplast Magnum excels in delivering durable, lightweight, and aesthetically pleasing products that enhance vehicle performance and design. Their moulding expertise ensures custom solutions for complex requirements, making them a trusted partner for top automotive brands worldwide.
-            </p>
-          </div>
-        </div>
-
-        <div className="right-side">
-          <div className="product-grid">
-            {products.map((product, index) => (
-              <div className="product-tile" key={index}>
-                <img
-                  src={product.img}
-                  data-src={product.img}
-                  alt={product.name}
-                  className="lazyload product-image"
-                />
-                <div className="product-name">{product.name}</div>
-              </div>
-            ))}
-          </div>
-
-                  <div className="cta-container">
-          <Link to="/products">
-            <button className="cta-button">See All Products</button>
-          </Link>
-        </div>
-
-        </div>
-      </div>
-    </section> */}
-
     <OurProducts />
 
 
     <ClientsSection />
-    {/* <OurService /> */}
+
+    <a
+        href="https://wa.me/919811061756"
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaWhatsapp size={40} />
+      </a>
+    
 
     </div>
   );

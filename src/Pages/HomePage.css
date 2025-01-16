@@ -12,6 +12,24 @@
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     transform-origin: center;
   }
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    z-index: 1000;
+  }
+  
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+  
   
   .steering-icon img {
     max-width: 100%;
