@@ -47,7 +47,7 @@ const CarouselPage = () => {
           </ul>
         </div>
         <div className="tool-design-right">
-          <img src="/col.png" alt="Tool Design" className="collage-image" />
+          <img src="/col.PNG" alt="Tool Design" className="collage-image" />
         </div>
       </section>
 
