@@ -9,7 +9,7 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: nowrap; /* Ensure items stay in one row */
@@ -61,6 +61,8 @@
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
+  white-space: normal; /* Let text wrap to next line */
+  word-break: break-word; /* Prevent overflow */
 }
 
 .footer-list li a:hover {

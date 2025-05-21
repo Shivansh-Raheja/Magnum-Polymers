@@ -59,7 +59,7 @@ const Footer = () => {
               <img src="/canada.png" alt="Canada Flag" className="footer-flag" />
               <div>Canada</div>
               <div>Rithwik Trehan</div>
-              <div><a href="mailto:ritwiktrehan@magnumwonderplast.com">rithwiktrehan@magnumwonderplast.com</a></div>
+              <div><a href="mailto:rithwiktrehan@magnumwonderplastlimited.com">rithwiktrehan@magnumwonderplastlimited.com</a></div>
               <div>+1 (647) 649-8826</div>
             </li>
             <li>
